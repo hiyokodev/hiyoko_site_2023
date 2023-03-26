@@ -1,28 +1,32 @@
 # hiyoko_site_2023
 
-This template should help get you started developing with Vue 3 in Vite.
+## 環境構築
+必要なもの
+- **VSCode**
+ソースコードを書くのに使います
+- **Git**
+ソースコードのバージョン管理に必要なツールです
+- **GitHubアカウント**
+Gitによる管理をクラウド上でみんなで行います
+- **Node.js**
+Vue.jsというフレームワークで開発するのに必要です
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## セットアップ
 
 ```sh
+git clone https://github.com/hiyokodev/hiyoko_site_2023.git
+cd hiyoko_site_2023
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## 動作テスト
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+<!-- ### Compile and Minify for Production
 
 ```sh
 npm run build
@@ -38,4 +42,4 @@ npm run test:unit
 
 ```sh
 npm run lint
-```
+``` -->
