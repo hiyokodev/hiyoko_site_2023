@@ -2,6 +2,7 @@
   "recommendations": [
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
-    "mhutchie.git-graph"
+    "mhutchie.git-graph",
+    "hollowtree.vue-snippets"
   ]
 }
