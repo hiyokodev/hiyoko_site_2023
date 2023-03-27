@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>What is ひよこ開発kitai</h2>
+    <h2>What is ひよこ開発kitaitosaijyou</h2>
   </section>
 </template>
 <script>
