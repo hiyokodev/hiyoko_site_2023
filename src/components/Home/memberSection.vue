@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Member</h2>
+    <h2>Member-----dayoooo Kitai</h2>
   </section>
 </template>
 <script>
