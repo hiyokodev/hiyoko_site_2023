@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Activity</h2>
+    <h2>Activity - fsugawara3ブランチで編集しました</h2>
   </section>
 </template>
 <script>
