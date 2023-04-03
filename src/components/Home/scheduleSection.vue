@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Schedule-mkunibe2が追加しました</h2>
+    <h2>Schedule-mkunibe2が追加しました。</h2>
   </section>
 </template>
 <script>
