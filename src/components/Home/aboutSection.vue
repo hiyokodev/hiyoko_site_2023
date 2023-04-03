@@ -1,7 +1,6 @@
 <template>
   <section>
-    <h2>菅原編集</h2>
-    <p>masterで編集 その2</p>
+    <h2>kunibe編集</h2>
   </section>
 </template>
 <script>
