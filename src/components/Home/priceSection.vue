@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Price</h2>
+    <h2>Price_ブランチ編集（西）</h2>
   </section>
 </template>
 <script>
