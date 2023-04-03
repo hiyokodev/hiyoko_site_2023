@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>What is ひよこ開発kitaitosaijyoutokunibe</h2>
+    <h2>kunibe編集</h2>
   </section>
 </template>
 <script>
