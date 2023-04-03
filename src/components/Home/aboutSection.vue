@@ -1,6 +1,7 @@
 <template>
   <section>
     <h2>What is ひよこ開発kitaitosaijyoutokunibe</h2>
+    <p>masterで編集</p>
   </section>
 </template>
 <script>
