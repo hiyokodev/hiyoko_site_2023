@@ -50,6 +50,6 @@ export default {
   background-color: rgba(255, 255, 204, 0.5);
   border-radius: 50%;
   transform: rotate(45deg);
-  z-index: 0;
+  z-index: -1;
 }
 </style>
