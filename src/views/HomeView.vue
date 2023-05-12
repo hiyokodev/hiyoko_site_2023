@@ -1,5 +1,6 @@
 <template>
   <main>
+    <!-- <BackgroundEggs /> -->
     <aboutSection />
     <memberSection />
     <activitySection />
@@ -15,6 +16,7 @@ import activitySection from '../components/Home/activitySection.vue'
 import scheduleSection from '../components/Home/scheduleSection.vue'
 import priceSection from '../components/Home/priceSection.vue'
 import questionSection from '../components/Home/questionSection.vue'
+import BackgroundEggs from '../components/common/BackgroundEggs.vue'
 export default {
   components: {
     aboutSection,
@@ -22,7 +24,8 @@ export default {
     activitySection,
     scheduleSection,
     priceSection,
-    questionSection
+    questionSection,
+    BackgroundEggs
   }
 }
 </script>

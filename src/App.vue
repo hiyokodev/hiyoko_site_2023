@@ -1,5 +1,6 @@
 <template>
   <Header />
+  <BackgroundEggs />
   <RouterView />
 </template>
 
@@ -7,8 +8,9 @@
 import { RouterLink, RouterView } from 'vue-router'
 import 'normalize.css'
 import Header from './components/common/Header.vue'
+import BackgroundEggs from './components/common/BackgroundEggs.vue'
 export default {
-  components: { Header }
+  components: { Header, BackgroundEggs }
 }
 </script>
 

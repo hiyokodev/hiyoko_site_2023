@@ -1,6 +1,9 @@
 <template>
   <section>
-    <h2>Schedule-mkunibe2が追加しました。</h2>
+    <div class="background"></div>
+    <div class="contents">
+      <h2>Schedule</h2>
+    </div>
   </section>
 </template>
 <script>
@@ -9,8 +12,19 @@ export default {}
 <style scoped>
 section {
   height: 500px;
-  padding: 20px;
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
   background-color: lightpink;
+  position: absolute;
+  z-index: -2;
+}
+
+.contents {
+  padding: 20px;
 }
 
 h2 {

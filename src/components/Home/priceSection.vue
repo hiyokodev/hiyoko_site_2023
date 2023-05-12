@@ -1,6 +1,9 @@
 <template>
   <section>
-    <h2>Price_ブランチ編集（西）</h2>
+    <div class="background"></div>
+    <div class="contents">
+      <h2>Price</h2>
+    </div>
   </section>
 </template>
 <script>
@@ -9,8 +12,19 @@ export default {}
 <style scoped>
 section {
   height: 500px;
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  position: absolute;
+  z-index: -2;
+}
+
+.contents {
   padding: 20px;
-  background-color: lightgrey;
 }
 
 h2 {
