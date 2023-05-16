@@ -13,9 +13,11 @@
         「勉強のモチベーションを上げたい」
       </p>
       <p class="text">そんな思いを抱えた仲間が集まっています。</p>
+      <p>ここの内容を変えました</p>
     </div>
   </section>
 </template>
+
 <script>
 export default {}
 </script>
