@@ -18,7 +18,7 @@ section {
 .background {
   width: 100%;
   height: 100%;
-  background-color: lightpink;
+  background-color: F5F5F5;
   position: absolute;
   z-index: -2;
 }
@@ -29,5 +29,7 @@ section {
 
 h2 {
   text-align: center;
+  font-family: Century;
+  font-size: 60px;
 }
 </style>
