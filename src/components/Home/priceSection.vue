@@ -6,9 +6,9 @@
       <h2>Price</h2>
       <div class="text-box">
           <div class="text-box-inner">
-            <p class="text-large">100 / 月</p>
+            <p class="text-large">100円 / 月</p>
             <p >集めたお金はひよこ開発の</p>
-           <p >有維持費として使用させていただきます。</p>
+           <p >維持費として使用させていただきます。</p>
           </div>
         </div>
         
@@ -37,7 +37,7 @@ section {
 
 
 .contents {
-  padding: 20px;
+  padding: -3px;
   margin:100px;
 }
 
@@ -53,7 +53,7 @@ h2 {
   max-width: 650px;
   margin: 20px auto;
   border-radius: 50px;
-  padding: 140px;
+  padding: 150px;
 }
 
 .text-box-inner{
