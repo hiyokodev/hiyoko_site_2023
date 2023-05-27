@@ -54,6 +54,7 @@ h2 {
   margin: 20px auto;
   border-radius: 50px;
   padding: 150px;
+  
 }
 
 .text-box-inner{
