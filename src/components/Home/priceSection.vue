@@ -72,4 +72,10 @@ section {
 
 }
 
+h2 {
+  text-align: center;
+  font-size: 60px;
+  font-family: Century;
+}
+
 </style>
