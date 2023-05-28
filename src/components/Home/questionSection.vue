@@ -74,6 +74,21 @@ h2 {
   font-family: Century;
   font-size: 60px;
   text-shadow: 1px 2px 3px #808080;
+<<<<<<< HEAD
+=======
+}
+
+.questionq{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.anser{
+  margin-bottom: 50px;
+  border-bottom: 1px solid black;
+  padding-bottom:30px;
+  font-size:18px;
+>>>>>>> 5c35edf9f789f789ed9683ca20f2949235e73156
 }
 
 .questionq{
