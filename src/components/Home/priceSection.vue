@@ -41,11 +41,6 @@ section {
   margin:100px;
 }
 
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: Century;
-}
 
 .text-box {
   position: relative;/* ←文字の親要素に指定 */
