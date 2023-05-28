@@ -9,43 +9,50 @@
           <p>メンバーは何人くらい。</p>
         </div>
         <div class="anser">
-          <p>A.約30名ほどで活動中で、男女ともに参加しやすい雰囲気です。お一人で飛び込むのが不安という方は、ご友人と一緒に参加されるのもよいと思います。</p>
+          <p>
+            A.約30名ほどで活動中で、男女ともに参加しやすい雰囲気です。お一人で飛び込むのが不安という方は、ご友人と一緒に参加されるのもよいと思います。
+          </p>
         </div>
 
         <div class="questionq">
           <p>参加するにあたり、何か必要なものはありますか。</p>
         </div>
         <div class="anser">
-          <p>A特にありません。活動に使用するツール（Slack・Notion・Zoom）がPCやスマートフォンから利用できれば大丈夫です。</p>
+          <p>
+            A特にありません。活動に使用するツール（Slack・Notion・Zoom）がPCやスマートフォンから利用できれば大丈夫です。
+          </p>
         </div>
 
         <div class="questionq">
           <p>入ったらまずどんなことをするのでしょうか。</p>
         </div>
         <div class="anser">
-          <p>スムーズに参加してもらうための各種説明会に加え、ツールの使い方や環境構築などのセットアップもサポートさせていただきます。<br>その後は定例会やオフラインイベントにご自由にご参加ください。</p>
+          <p>
+            スムーズに参加してもらうための各種説明会に加え、ツールの使い方や環境構築などのセットアップもサポートさせていただきます。<br />その後は定例会やオフラインイベントにご自由にご参加ください。
+          </p>
         </div>
 
         <div class="questionq">
           <p>仕事が忙しくなった場合、活動に参加できるか不安です。</p>
         </div>
         <div class="anser">
-          <p>活動はすべて任意参加なので、ご自身のスケジュール優先で大丈夫です。内容はアーカイブに残るので、後から確認することもできます。</p>
+          <p>
+            活動はすべて任意参加なので、ご自身のスケジュール優先で大丈夫です。内容はアーカイブに残るので、後から確認することもできます。
+          </p>
         </div>
 
         <div class="questionq">
           <p>上記の活動以外のこともしてみたいのですが、できるのでしょうか。</p>
         </div>
         <div class="anser">
-          <p>やってみたいことの提案は大歓迎です。ここに載せきれていない活動も多くありますし、アイデアは常に募集中です。</p>
+          <p>
+            やってみたいことの提案は大歓迎です。ここに載せきれていない活動も多くありますし、アイデアは常に募集中です。
+          </p>
         </div>
       </div>
-
     </div>
   </section>
 </template>
-
-
 
 <script>
 export default {}
@@ -66,7 +73,7 @@ section {
 
 .contents {
   padding: 20px;
-  margin:100px;
+  margin: 100px;
 }
 
 h2 {
@@ -74,32 +81,29 @@ h2 {
   font-family: Century;
   font-size: 60px;
   text-shadow: 1px 2px 3px #808080;
-<<<<<<< HEAD
-=======
 }
 
-.questionq{
+.questionq {
   font-weight: bold;
   font-size: 20px;
 }
 
-.anser{
+.anser {
   margin-bottom: 50px;
   border-bottom: 1px solid black;
-  padding-bottom:30px;
-  font-size:18px;
->>>>>>> 5c35edf9f789f789ed9683ca20f2949235e73156
+  padding-bottom: 30px;
+  font-size: 18px;
 }
 
-.questionq{
+.questionq {
   font-weight: bold;
   font-size: 20px;
 }
 
-.anser{
+.anser {
   margin-bottom: 50px;
   border-bottom: 1px solid black;
-  padding-bottom:30px;
-  font-size:18px;
+  padding-bottom: 30px;
+  font-size: 18px;
 }
 </style>
