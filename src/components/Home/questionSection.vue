@@ -40,12 +40,9 @@
           <p>A.やってみたいことの提案は大歓迎です。ここに載せきれていない活動も多くありますし、アイデアは常に募集中です。</p>
         </div>
       </div>
-
     </div>
   </section>
 </template>
-
-
 
 <script>
 export default {}
@@ -66,7 +63,7 @@ section {
 
 .contents {
   padding: 20px;
-  margin:100px;
+  margin: 100px;
 }
 
 h2 {
@@ -84,8 +81,8 @@ h2 {
 .answer{
   margin-bottom: 50px;
   border-bottom: 1px solid black;
-  padding-bottom:30px;
-  font-size:18px;
+  padding-bottom: 30px;
+  font-size: 18px;
 }
 
 
