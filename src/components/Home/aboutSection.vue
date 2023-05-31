@@ -28,11 +28,12 @@ section {
 
 h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
   font-family: 'Bitter', serif;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
 
 .text-box {
   background-color: rgba(230, 230, 230, 0.7);
