@@ -30,7 +30,7 @@ h2 {
   text-align: center;
   font-size: 60px;
   font-weight: bold;
-  font-family: 'Bitter', serif;
+  font-family: Century;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
