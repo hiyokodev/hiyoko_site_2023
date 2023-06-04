@@ -19,6 +19,8 @@
         </div>
       </div>
 
+      <a class="btn">詳細はこちら→</a>
+
     </div>
 
 
@@ -29,7 +31,7 @@ export default {}
 </script>
 <style scoped>
 section {
-  height: 600px;
+  height: 700px;
   position: relative;
 }
 
@@ -43,16 +45,12 @@ section {
 
 .contents {
   padding: 20px; 
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
   font-size: 60px;
   font-family: Century;
-}
-
-.activity{
-  text-align: center; 
 }
 
 .activity-contents{
@@ -79,5 +77,22 @@ h2 {
   opacity:0.95;
 }
 
+.btn{
+  padding:8px 24px;
+  margin-top: 40px;
+  display:inline-block;
+  background: #fef9c6;
+  font-size: 20px;
+  border-radius: 3px;
+  letter-spacing:1px;
+  cursor:pointer;
+  border-bottom: solid 4px #dcd8ad;
+}
+
+.btn:active{
+  border-bottom: none;
+  position: relative;
+  top:4px;
+}
 
 </style>
