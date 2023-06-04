@@ -6,16 +6,16 @@
 
       <div class="activity">
         <div class="activity-contents">
+          <img src="@/assets/img/web.jpeg" class="img">
           <p>WEB site</p>
-          <img src="C:\Users\yume\OneDrive\画像\カメラ ロール\8726b32a1b75702b6e9b4637aa58f8df.jpg">
         </div>
         <div class="activity-contents">
+          <img src="@/assets/img/auto.jpeg" class="img">
           <p>Automation tools</p>
-          <img src="C:\Users\yume\OneDrive\画像\カメラ ロール\8726b32a1b75702b6e9b4637aa58f8df.jpg">
         </div>
         <div class="activity-contents">
+          <img src="@/assets/img/LT.jpeg" class="img">
           <p>Lightning talk</p>
-          <img src="C:\Users\yume\OneDrive\画像\カメラ ロール\8726b32a1b75702b6e9b4637aa58f8df.jpg">
         </div>
       </div>
 
@@ -29,7 +29,7 @@ export default {}
 </script>
 <style scoped>
 section {
-  height: 500px;
+  height: 600px;
   position: relative;
 }
 
@@ -61,6 +61,7 @@ h2 {
   margin: 10px 30px;
   background: rgba(230, 230, 230, 0.7);
   border-bottom: solid 6px #c6cbd0;
+  border-right: solid 6px #c6cbd0;
   border-radius: 9px;
   display: inline-block; 
 }
@@ -68,6 +69,15 @@ h2 {
 .activity-contents p{
   font-family: Bitter;
   font-weight: bold;
+  letter-spacing:1px;
 }
+
+.img{
+  width: 250px;
+  height: 250px;
+  margin-top: 30px;
+  opacity:0.95;
+}
+
 
 </style>
