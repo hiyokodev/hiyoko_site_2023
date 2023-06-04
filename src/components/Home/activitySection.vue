@@ -68,6 +68,7 @@ h2 {
   font-family: Bitter;
   font-weight: bold;
   letter-spacing:1px;
+  font-size: 20px;
 }
 
 .img{
