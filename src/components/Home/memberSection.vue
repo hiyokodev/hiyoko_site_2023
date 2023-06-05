@@ -4,6 +4,28 @@
     <div class="contents">
       <h2>Member</h2>
     </div>
+    
+    /*スライダーの変更 */
+
+    <div class="slide-container">
+   <div class="slide-wrapper">
+      <img class="slide" src="小林 様-116.JPG" >
+      <img class="slide" src="小林 様-138.JPG" >
+      <img class="slide" src="小林 様-194.JPG" >
+   </div>
+   <div class="slide-wrapper">
+      <img class="slide" src="小林 様-116.JPG" >
+      <img class="slide" src="小林 様-138.JPG" >
+      <img class="slide" src="小林 様-194.JPG" >
+   </div>
+   <div class="slide-wrapper">
+      <img class="slide" src="小林 様-116.JPG" >
+      <img class="slide" src="小林 様-138.JPG" >
+      <img class="slide" src="小林 様-194.JPG" >
+   </div>
+</div>
+
+
   </section>
 </template>
 <script>
@@ -25,9 +47,35 @@ section {
 
 .contents {
   padding: 20px;
+  font-family: Century;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 10px;
 }
 
 h2 {
   text-align: center;
+}
+
+
+.slide-container {
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.slide-wrapper {
+  display: flex;
+  animation: slide-flow 20s infinite linear 1s both;
+}
+.slide{
+  width: 300px;
+  object-fit:cover;
+  border: 1px solid #ddd;
+}
+@keyframes slide-flow {
+     0% {transform: translateX(0);}
+ 100% {transform: translateX(-100%);}
 }
 </style>
