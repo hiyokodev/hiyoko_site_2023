@@ -4,24 +4,22 @@
     <div class="contents">
       <h2>Member</h2>
     </div>
-    
-    /*スライダーの変更 */
 
     <div class="slide-container">
    <div class="slide-wrapper">
-      <img class="slide" src="小林 様-116.JPG" >
-      <img class="slide" src="小林 様-138.JPG" >
-      <img class="slide" src="小林 様-194.JPG" >
+      <img class="slide" src="../assets/img/member1" >
+      <img class="slide" src="../assets/img/member2" >
+      <img class="slide" src="../assets/img/member3" >
    </div>
    <div class="slide-wrapper">
-      <img class="slide" src="小林 様-116.JPG" >
-      <img class="slide" src="小林 様-138.JPG" >
-      <img class="slide" src="小林 様-194.JPG" >
+      <img class="slide" src="../assets/img/member1" >
+      <img class="slide" src="../assets/img/member2" >
+      <img class="slide" src="../assets/img/member3" >
    </div>
    <div class="slide-wrapper">
-      <img class="slide" src="小林 様-116.JPG" >
-      <img class="slide" src="小林 様-138.JPG" >
-      <img class="slide" src="小林 様-194.JPG" >
+      <img class="slide" src="../assets/img/member1" >
+      <img class="slide" src="../assets/img/member2" >
+      <img class="slide" src="../assets/img/member3" >
    </div>
 </div>
 
@@ -33,7 +31,7 @@ export default {}
 </script>
 <style scoped>
 section {
-  height: 500px;
+  height: 1000px;
   position: relative;
 }
 
