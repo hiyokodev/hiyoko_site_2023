@@ -4,17 +4,28 @@
   <main>
     <div class="contents">
       <h2>Member</h2>
-
-    <p>愉快な仲間たち</p>
     </div>
 
-    <ul class="member-photo">
-      <li><img src="assets/img/member1.jpg" alt=""></li>
-      <li><img src="assets/img/member2.jpg" alt=""></li>
-      <li><img src="assets/img/member3.jpg" alt=""></li>
-      <li><img src="assets/img/member4.jpg" alt=""></li>
-      <li><img src="assets/img/member5.jpg" alt=""></li>
-    </ul>  
+    <ul class="top-banner">
+        <li><img src="@/assets/img/member1.jpg"></li>
+        <li><img src="@/assets/img/member2.jpg"></li>
+        <li><img src="@/assets/img/member3.jpg"></li>
+        <li><img src="@/assets/img/member4.jpg"></li>
+        <li><img src="@/assets/img/member5.jpg"></li>
+        <li><img src="@/assets/img/member6.jpg"></li>
+        <li><img src="@/assets/img/member3.jpg"></li>
+        <li><img src="@/assets/img/member4.jpg"></li>
+        <li><img src="@/assets/img/member5.jpg"></li>
+        <li><img src="@/assets/img/member6.jpg"></li>
+        <li><img src="@/assets/img/member1.jpg"></li>
+        <li><img src="@/assets/img/member2.jpg"></li>
+        <li><img src="@/assets/img/member3.jpg"></li>
+        <li><img src="@/assets/img/member6.jpg"></li>
+        <li><img src="@/assets/img/member3.jpg"></li>
+        <li><img src="@/assets/img/member4.jpg"></li>
+        <li><img src="@/assets/img/member5.jpg"></li>
+    </ul>
+	
   </main>
 </template>
 
@@ -33,21 +44,25 @@ h2 {
   text-shadow: 1px 2px 3px #808080;
 }
 
-.member-photo{
-  display: flex;
+.top-banner{
+	display: flex;
+	flex-wrap:wrap;
+}
+.top-banner li {
+  width: 30%;
+	width: calc(100%/5);/*画像を横に4つ並べる場合*/
+	padding:35px 60px ;/*画像の左右上下に余白を入れる場合*/
+	box-sizing:border-box;
+  list-style: none;/*リストの黒い●を無くす*/
+}
+.top-banner li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持*/
+	border:solid 10px #e1e1e1; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
   flex-wrap: wrap;
-}
-
-.member-photo li{
-  width: colc(100%5);
-  padding: 0 5px;
-  box-sizing: border-box;
-}
-
-.member-photo li img{
-  max-width: 100%;
-  height: auto;
-  border: solid 1px #ccc;
+  margin:40 0;
+  border-radius: 35px; /* ちょっとだけ角丸 */
+  
 }
 
 </style>
