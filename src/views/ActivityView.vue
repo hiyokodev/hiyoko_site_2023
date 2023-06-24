@@ -32,6 +32,15 @@
         <div class="daen two"></div>
         <div class="tyouhoukei ttwo">
           <h3>Automation tools</h3>
+          <table border="0">
+            <tr>
+              <td><img src="@/assets/img/auto.jpeg" class="img"></td>
+              <td><img src="@/assets/img/auto2.jpeg" class="img"></td>
+            </tr>
+          </table>
+          <p> ExcelのVBAを用いて、自動化の開発を行っています。
+              <br>マクロを組んだことがない人でも簡単に応用ができます。
+              <br>さまざまな自動化に今後も取り組み続けます。</p>
         </div>
       </div>
 
@@ -39,6 +48,19 @@
         <div class="daen three"></div>
         <div class="tyouhoukei tthree">
           <h3>Lightning talk</h3>
+          <table border="0">
+            <tr>
+              <td><img src="@/assets/img/LT.jpg" class="img"></td>
+              <td><img src="@/assets/img/LT2.jpeg" class="img"></td>
+            </tr>
+          </table>
+          <p>AWSチームでやっているプレゼンコーナーのようなものを、
+             <br>テーマを拡張して10分程で定例会で発表します。
+             <br>〇〇の機器の✗✗の設定の仕方、Linuxコマンド、環境変数とパスについてなど、
+             <br>各自が好きなテーマで解説をし、メンバーと共有をして様々な知見を手に入れることができます。
+             <br>
+             <br>今後はさらに大きなプロジェクト単位でのグループプレゼンテーション等を考えています。
+             <br>過去の資料はこちらからみることができます。</p>
         </div>
       </div>
 
@@ -89,6 +111,7 @@ h2 {
   height: 600px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 10px 10px 0 rgba(65, 65, 65, 0.422);
+  border-radius: 15px;
 }
 
 .tone{
@@ -96,6 +119,7 @@ h2 {
   top: 400px;
   left: 450px;
 }
+
 
 h3{
   font-family: Century;
@@ -107,6 +131,7 @@ h3{
 .img{
   width: 250px;
   height: 250px;
+  opacity: 0.9;
 }
 
 table{
