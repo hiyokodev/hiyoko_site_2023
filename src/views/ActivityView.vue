@@ -5,7 +5,7 @@
     <div class="contents">
       <h2>Activity</h2>
 
-      <div class="Web site">
+      <div class="Website">
         <div class="daen one"></div>
         <div class="tyouhoukei tone">
           <h3>Web Site</h3>
@@ -28,7 +28,7 @@
 
       </div>
 
-      <div class="Automation tools">
+      <div class="Automationtools">
         <div class="daen two"></div>
         <div class="tyouhoukei ttwo">
           <h3>Automation tools</h3>
@@ -89,21 +89,22 @@ h2 {
 .daen{
   background-color:#ffec50;
   border-radius: 50%;
-  margin:10% 30% 20% 10%;
+  margin:5% 30% 20% 10%;
   width: 1000px;
   height: 700px;
+
 }
 
 .one{
-  position: relative;
+  position: absolute;
 }
 
 .two{
-  position: relative;
+  position: absolute;
 }
 
 .three{
-  position: relative;
+  position: absolute;
 }
 
 .tyouhoukei{
@@ -112,13 +113,27 @@ h2 {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 10px 10px 0 rgba(65, 65, 65, 0.422);
   border-radius: 15px;
+  padding-top: 5px;
 }
 
 .tone{
-  position: absolute;
-  top: 400px;
+  position:relative ;
+  top: 150px;
   left: 450px;
 }
+
+.ttwo{
+  position:relative ;
+  top: 150px;
+  left: 450px;
+}
+
+.tthree{
+  position:relative ;
+  top: 150px;
+  left: 450px;
+}
+
 
 
 h3{
@@ -139,7 +154,17 @@ table{
 }
 
 .tyouhoukei p{
-  margin:20px 80px;
+  margin:30px 80px;
   text-align: left;
 }
+
+
+.Website{
+  padding-bottom: 300px;
+}
+
+.Automationtools{
+  padding-bottom: 300px;
+}
+
 </style>
