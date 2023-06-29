@@ -5,27 +5,16 @@
     <div class="contents">
       <h2>Member</h2>
     </div>
-
-    <ul class="top-banner">
-        <li><img src="@/assets/img/member1.jpg"></li>
-        <li><img src="@/assets/img/member2.jpg"></li>
-        <li><img src="@/assets/img/member3.jpg"></li>
-        <li><img src="@/assets/img/member4.jpg"></li>
-        <li><img src="@/assets/img/member5.jpg"></li>
-        <li><img src="@/assets/img/member6.jpg"></li>
-        <li><img src="@/assets/img/member3.jpg"></li>
-        <li><img src="@/assets/img/member4.jpg"></li>
-        <li><img src="@/assets/img/member5.jpg"></li>
-        <li><img src="@/assets/img/member6.jpg"></li>
-        <li><img src="@/assets/img/member1.jpg"></li>
-        <li><img src="@/assets/img/member2.jpg"></li>
-        <li><img src="@/assets/img/member3.jpg"></li>
-        <li><img src="@/assets/img/member6.jpg"></li>
-        <li><img src="@/assets/img/member3.jpg"></li>
-        <li><img src="@/assets/img/member4.jpg"></li>
-        <li><img src="@/assets/img/member5.jpg"></li>
+    <div class="btn">
+    <ul class="photos">
+        <li><img src="@/assets/img/tauti_akane1.jpg"></li>
+        <li><img src="@/assets/img/takasu_masayuki1.jpg"></li>
+        <li><img src="@/assets/img/kunibe_mayu1.jpg"></li>
+        <li><img src="@/assets/img/saijyo_yume1.jpg"></li>
+        <li><img src="@/assets/img/koyama_wataru1.jpg"></li>
+        <li><img src="@/assets/img/nomura_mao1.jpg"></li>
     </ul>
-	
+	</div>
   </main>
 </template>
 
@@ -44,25 +33,37 @@ h2 {
   text-shadow: 1px 2px 3px #808080;
 }
 
-.top-banner{
+.photos{
 	display: flex;
 	flex-wrap:wrap;
+  justify-content: center;
 }
-.top-banner li {
-  width: 30%;
-	width: calc(100%/5);/*画像を横に4つ並べる場合*/
-	padding:35px 60px ;/*画像の左右上下に余白を入れる場合*/
+.photos li {
+	width: calc(100% / 5);/*画像を横に5つ並べる場合*/
+	padding:0px 40px ;/*画像の左右上下に余白を入れる場合*/
 	box-sizing:border-box;
   list-style: none;/*リストの黒い●を無くす*/
 }
-.top-banner li img {
+.photos li img {
 	max-width:100%; /*画像のはみだしを防ぐ*/
+  min-width: 130px; /*画像の最低幅を定義*/
 	height: auto; /*画像の縦横比を維持*/
 	border:solid 10px #e1e1e1; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
   flex-wrap: wrap;
-  margin:40 0;
+  margin:40px 0px;
   border-radius: 35px; /* ちょっとだけ角丸 */
   
 }
+
+.btn{
+  .btn:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.btn:hover img:nth-of-type(2) {
+  opacity: 0;
+}
+}
+
 
 </style>
