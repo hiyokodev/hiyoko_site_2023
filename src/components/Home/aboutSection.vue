@@ -13,9 +13,11 @@
         「勉強のモチベーションを上げたい」
       </p>
       <p class="text">そんな思いを抱えた仲間が集まっています。</p>
+      <p>ここの内容を変えました</p>
     </div>
   </section>
 </template>
+
 <script>
 export default {}
 </script>
@@ -26,11 +28,12 @@ section {
 
 h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   font-weight: bold;
-  font-family: 'Bitter', serif;
+  font-family: Century;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
 
 .text-box {
   background-color: rgba(230, 230, 230, 0.7);
