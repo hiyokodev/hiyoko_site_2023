@@ -28,7 +28,8 @@ section {
 
 h2 {
   text-align: center;
-  font-family: Century;
   font-size: 60px;
+  font-family: 'Mamelon';
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 </style>
