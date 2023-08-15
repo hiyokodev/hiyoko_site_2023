@@ -45,8 +45,10 @@ section {
 }
 
 h2 {
+  text-align: center;
   font-size: 60px;
-  font-family: Century;
+  font-family: 'Mamelon';
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .activity-contents {
@@ -61,7 +63,7 @@ h2 {
 }
 
 .activity-contents p {
-  font-family: Bitter;
+  font-family: 'Yomogi';
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 20px;
