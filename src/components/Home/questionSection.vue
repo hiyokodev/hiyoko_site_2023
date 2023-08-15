@@ -13,6 +13,9 @@
           <div class="answer_icon">A</div>
           <p class="answer_text">{{ content.answer }}</p>
         </div>
+        <div class="img-container" v-if="!content.isBottom">
+          <img src="@/assets/img/Home/footprints_three.png" />
+        </div>
       </div>
     </div>
   </section>
@@ -46,7 +49,8 @@ export default {
         {
           question: '上記の活動以外のこともしてみたいのですが、できるのでしょうか。',
           answer:
-            'やってみたいことの提案は大歓迎です。ここに載せきれていない活動も多くありますし、アイデアは常に募集中です。'
+            'やってみたいことの提案は大歓迎です。ここに載せきれていない活動も多くありますし、アイデアは常に募集中です。',
+          isBottom: true
         }
       ]
     }
@@ -78,11 +82,6 @@ h2 {
   margin: 100px;
   font-family: 'Yomogi';
 }
-
-.content {
-  margin-bottom: 80px;
-}
-
 .question {
   display: flex;
   padding: 15px;
@@ -132,5 +131,14 @@ h2 {
   width: calc(100% - 32px);
   padding-left: 15px;
   line-height: 32px;
+}
+
+.img-container {
+  margin: 50px auto;
+  text-align: center;
+}
+
+img {
+  width: 150px;
 }
 </style>
