@@ -21,8 +21,11 @@ img {
 }
 
 .Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  height: 20px;
+  height: 30px;
   background-color: #fbea92;
 }
 
