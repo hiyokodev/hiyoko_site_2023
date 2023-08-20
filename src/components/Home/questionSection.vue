@@ -59,7 +59,6 @@ export default {
 </script>
 <style scoped>
 section {
-  height: 500px;
   position: relative;
 }
 

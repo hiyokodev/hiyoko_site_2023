@@ -7,6 +7,7 @@
     <scheduleSection />
     <priceSection />
     <questionSection />
+    <Footer />
   </main>
 </template>
 <script>
@@ -17,6 +18,7 @@ import scheduleSection from '../components/Home/scheduleSection.vue'
 import priceSection from '../components/Home/priceSection.vue'
 import questionSection from '../components/Home/questionSection.vue'
 import BackgroundEggs from '../components/common/BackgroundEggs.vue'
+import Footer from '../components/common/Footer.vue'
 export default {
   components: {
     aboutSection,
@@ -25,8 +27,13 @@ export default {
     scheduleSection,
     priceSection,
     questionSection,
-    BackgroundEggs
+    BackgroundEggs,
+    Footer
   }
 }
 </script>
-<style scoped></style>
+<style scoped>
+main {
+  height: auto;
+}
+</style>
