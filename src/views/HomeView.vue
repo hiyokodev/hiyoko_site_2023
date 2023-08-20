@@ -1,6 +1,8 @@
 <template>
   <main>
     <!-- <BackgroundEggs /> -->
+
+    <topImageSection />
     <aboutSection />
     <memberSection />
     <activitySection />
@@ -11,6 +13,7 @@
   </main>
 </template>
 <script>
+import topImageSection from '../components/Home/topImageSection.vue'
 import aboutSection from '../components/Home/aboutSection.vue'
 import memberSection from '../components/Home/memberSection.vue'
 import activitySection from '../components/Home/activitySection.vue'
@@ -21,6 +24,7 @@ import BackgroundEggs from '../components/common/BackgroundEggs.vue'
 import Footer from '../components/common/Footer.vue'
 export default {
   components: {
+    topImageSection,
     aboutSection,
     memberSection,
     activitySection,
