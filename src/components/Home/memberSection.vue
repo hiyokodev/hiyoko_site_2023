@@ -3,24 +3,47 @@
     <div class="background"></div>
     <div class="contents">
       <h2>Member</h2>
-    </div>
-
-    <div class="scroll">
-      <ul class="scroll-list">
-        <li><img class="slide" src="@/assets/img/member1.jpg" alt="" /></li>
-        <li><img class="slide" src="@/assets/img/member2.jpg" alt="" /></li>
-        <li><img class="slide" src="@/assets/img/member3.jpg" alt="" /></li>
-      </ul>
-      <ul class="scroll-list">
-        <li><img class="slide" src="@/assets/img/member1.jpg" alt="" /></li>
-        <li><img class="slide" src="@/assets/img/member2.jpg" alt="" /></li>
-        <li><img class="slide" src="@/assets/img/member3.jpg" alt="" /></li>
-      </ul>
+      <p class="description">約30名ほどで活動中で、男女ともに参加しやすい雰囲気です。</p>
+      <div class="scroll">
+        <!-- FIXME: 見切れ防止のために同じリストを2つ並べている。よりよい方法があれば修正する -->
+        <ul class="scroll-list">
+          <li v-for="member in members" :key="member">
+            <img class="slide" :src="`src/assets/img/Members/${member}.jpg`" alt="" />
+          </li>
+        </ul>
+        <ul class="scroll-list">
+          <li v-for="member in members" :key="member">
+            <img class="slide" :src="`src/assets/img/Members/${member}.jpg`" alt="" />
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      // TODO: 写真のトリミング
+      members: [
+        'sugawara',
+        'tauchi',
+        'koyama',
+        'kawai',
+        'takasu',
+        'kinomoto',
+        'honda',
+        'kobayashi',
+        'kamiya',
+        'tanaka',
+        'nomura',
+        'sasaki',
+        'kunibe',
+        'saijo'
+      ]
+    }
+  }
+}
 </script>
 <style scoped>
 section {
@@ -35,19 +58,18 @@ section {
   z-index: -2;
 }
 
-.contents {
-  padding: 20px;
-  font-family: Century;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 10px;
-}
-
 h2 {
   text-align: center;
   font-size: 60px;
   font-family: 'Mamelon';
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  margin: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Yomogi';
 }
 
 @keyframes loop {
@@ -58,10 +80,6 @@ h2 {
     transform: translateX(-100%);
   }
 }
-.slide {
-  width: 240px;
-  height: auto;
-}
 .scroll {
   margin: 10px;
   display: flex;
@@ -70,17 +88,19 @@ h2 {
   align-items: center;
   height: max-content;
   overflow-y: hidden;
-  border: 2px solid;
-  padding: 0px;
-  max-width: 1800px;
   color: lightgoldenrodyellow;
 }
 .scroll-list {
   display: flex;
   align-items: center;
-  animation: loop infinite linear 30s both;
-  li {
-    min-width: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  animation: loop infinite linear 60s both;
+}
+.slide {
+  margin: 0 20px;
+  width: 240px;
+  height: auto;
+  border-radius: 20px;
 }
 </style>
