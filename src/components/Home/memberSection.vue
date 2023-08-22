@@ -1,30 +1,28 @@
 <template>
-  <section>
-    <div class="background"></div>
-    <div class="contents">
-      <h2>Member</h2>
-      <p class="description">約30名ほどで活動中で、男女ともに参加しやすい雰囲気です。</p>
-      <div class="scroll">
-        <!-- FIXME: 見切れ防止のために同じリストを2つ並べている。よりよい方法があれば修正する -->
-        <ul class="scroll-list">
-          <li v-for="member in members" :key="member">
-            <img class="slide" :src="`src/assets/img/Members/${member}.jpg`" alt="" />
-          </li>
-        </ul>
-        <ul class="scroll-list">
-          <li v-for="member in members" :key="member">
-            <img class="slide" :src="`src/assets/img/Members/${member}.jpg`" alt="" />
-          </li>
-        </ul>
-      </div>
-      <Button :message="buttonMessage" :url="buttonURL" />
+  <sectionLayout title="Member">
+    <p class="description">約30名ほどで活動中で、男女ともに参加しやすい雰囲気です。</p>
+    <div class="scroll">
+      <!-- FIXME: 見切れ防止のために同じリストを2つ並べている。よりよい方法があれば修正する -->
+      <ul class="scroll-list">
+        <li v-for="member in members" :key="member">
+          <img class="slide" :src="`src/assets/img/Members/${member}.jpg`" alt="" />
+        </li>
+      </ul>
+      <ul class="scroll-list">
+        <li v-for="member in members" :key="member">
+          <img class="slide" :src="`src/assets/img/Members/${member}.jpg`" alt="" />
+        </li>
+      </ul>
     </div>
-  </section>
+    <Button :message="buttonMessage" :url="buttonURL" />
+  </sectionLayout>
 </template>
 <script>
+import SectionLayout from './SectionLayout.vue'
 import Button from '../common/Button.vue'
 export default {
   components: {
+    SectionLayout,
     Button
   },
   data() {
@@ -53,29 +51,8 @@ export default {
 }
 </script>
 <style scoped>
-section {
-  position: relative;
-}
-
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
 .description {
   margin: 50px;
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Yomogi';
 }
 
 @keyframes loop {
@@ -87,7 +64,9 @@ h2 {
   }
 }
 .scroll {
-  margin: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+  width: 100vw;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;

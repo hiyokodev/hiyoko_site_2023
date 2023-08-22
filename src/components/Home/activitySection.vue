@@ -1,56 +1,32 @@
 <template>
-  <section>
-    <div class="background"></div>
-    <div class="contents">
-      <h2>Activity</h2>
-
-      <div class="activity">
-        <div class="activity-contents">
-          <img src="@/assets/img//Home/activity_website.jpeg" class="img" />
-          <p>WEB site</p>
-        </div>
-        <div class="activity-contents">
-          <img src="@/assets/img/Home/activity_automation.jpeg" class="img" />
-          <p>Automation tools</p>
-        </div>
-        <div class="activity-contents">
-          <img src="@/assets/img/Home/activity_LT.jpeg" class="img" />
-          <p>Lightning talk</p>
-        </div>
+  <SectionLayout title="Activity">
+    <div class="activity">
+      <div class="activity-contents">
+        <img src="@/assets/img//Home/activity_website.jpeg" class="img" />
+        <p>WEB site</p>
       </div>
-
-      <a class="btn">詳細はこちら→</a>
+      <div class="activity-contents">
+        <img src="@/assets/img/Home/activity_automation.jpeg" class="img" />
+        <p>Automation tools</p>
+      </div>
+      <div class="activity-contents">
+        <img src="@/assets/img/Home/activity_LT.jpeg" class="img" />
+        <p>Lightning talk</p>
+      </div>
     </div>
-  </section>
+
+    <a class="btn">詳細はこちら→</a>
+  </SectionLayout>
 </template>
 <script>
-export default {}
+import SectionLayout from './SectionLayout.vue'
+export default {
+  components: {
+    SectionLayout
+  }
+}
 </script>
 <style scoped>
-section {
-  height: 700px;
-  position: relative;
-}
-
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
-.contents {
-  padding: 20px;
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
 .activity-contents {
   width: 300px;
   padding: 10px 30px;

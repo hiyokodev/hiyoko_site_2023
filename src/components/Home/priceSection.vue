@@ -1,39 +1,23 @@
 <template>
-  <section>
-    <div class="background"></div>
-    <div class="contents">
-      <h2>Price</h2>
-      <div class="text-box">
-        <div class="text-box-inner">
-          <p class="text-large">100円 / 月</p>
-          <p>集めたお金はひよこ開発の</p>
-          <p>維持費として使用させていただきます。</p>
-        </div>
+  <sectionLayout title="Price">
+    <div class="text-box">
+      <div class="text-box-inner">
+        <p class="text-large">100円 / 月</p>
+        <p>集めたお金はひよこ開発の</p>
+        <p>維持費として使用させていただきます。</p>
       </div>
     </div>
-  </section>
+  </sectionLayout>
 </template>
 <script>
-export default {}
+import SectionLayout from './SectionLayout.vue'
+export default {
+  components: {
+    SectionLayout
+  }
+}
 </script>
 <style scoped>
-section {
-  height: 500px;
-  position: relative;
-}
-
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
-.contents {
-  padding: -3px;
-  margin: 100px;
-}
-
 .text-box {
   position: relative; /* ←文字の親要素に指定 */
   background-color: rgba(230, 230, 230, 0.7);
@@ -59,12 +43,5 @@ section {
   font-weight: bold;
   font-size: 50px;
   line-height: 10px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 </style>

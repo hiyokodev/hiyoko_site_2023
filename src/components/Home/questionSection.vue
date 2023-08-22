@@ -1,28 +1,27 @@
 <template>
-  <section>
-    <div class="background"></div>
-    <div class="contents">
-      <h2>Question</h2>
-
-      <div class="content" v-for="content in contents" :key="content.question">
-        <div class="question">
-          <div class="question_icon">Q</div>
-          <p class="question_text">{{ content.question }}</p>
-        </div>
-        <div class="answer">
-          <div class="answer_icon">A</div>
-          <p class="answer_text">{{ content.answer }}</p>
-        </div>
-        <div class="img-container" v-if="!content.isBottom">
-          <img src="@/assets/img/Home/footprints_three.png" />
-        </div>
+  <sectionLayout title="Price">
+    <div class="content" v-for="content in contents" :key="content.question">
+      <div class="question">
+        <div class="question_icon">Q</div>
+        <p class="question_text">{{ content.question }}</p>
+      </div>
+      <div class="answer">
+        <div class="answer_icon">A</div>
+        <p class="answer_text">{{ content.answer }}</p>
+      </div>
+      <div class="img-container" v-if="!content.isBottom">
+        <img src="@/assets/img/Home/footprints_three.png" />
       </div>
     </div>
-  </section>
+  </sectionLayout>
 </template>
 
 <script>
+import SectionLayout from './SectionLayout.vue'
 export default {
+  components: {
+    SectionLayout
+  },
   data() {
     return {
       contents: [
@@ -58,34 +57,12 @@ export default {
 }
 </script>
 <style scoped>
-section {
-  position: relative;
-}
-
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.contents {
-  padding: 20px;
-  margin: 100px;
-  font-family: 'Yomogi';
-}
 .question {
   display: flex;
   padding: 15px;
   font-weight: bold;
   font-size: 20px;
+  text-align: left;
 }
 
 .question_icon {
@@ -111,6 +88,7 @@ h2 {
   display: flex;
   padding: 15px;
   font-size: 18px;
+  text-align: left;
 }
 
 .answer_icon {

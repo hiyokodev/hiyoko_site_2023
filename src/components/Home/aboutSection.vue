@@ -1,6 +1,5 @@
 <template>
-  <section>
-    <h2>What is ひよこ開発</h2>
+  <sectionLayout title="What is ひよこ開発">
     <div class="text-box">
       <p class="text">
         「ひよこ開発」はメンバー同士の交流や情報交換、勉強のきっかけづくりを目的とした<br />
@@ -14,24 +13,18 @@
       </p>
       <p class="text">そんな思いを抱えた仲間が集まっています。</p>
     </div>
-  </section>
+  </sectionLayout>
 </template>
 
 <script>
-export default {}
+import SectionLayout from './SectionLayout.vue'
+export default {
+  components: {
+    SectionLayout
+  }
+}
 </script>
 <style scoped>
-section {
-  padding: 20px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
 .text-box {
   background-color: rgba(230, 230, 230, 0.7);
   max-width: 650px;
