@@ -17,13 +17,20 @@
           </li>
         </ul>
       </div>
+      <Button :message="buttonMessage" :url="buttonURL" />
     </div>
   </section>
 </template>
 <script>
+import Button from '../common/Button.vue'
 export default {
+  components: {
+    Button
+  },
   data() {
     return {
+      buttonMessage: 'メンバーページ',
+      buttonURL: '/member',
       // TODO: 写真のトリミング
       members: [
         'sugawara',
@@ -47,7 +54,6 @@ export default {
 </script>
 <style scoped>
 section {
-  height: 600px;
   position: relative;
 }
 
