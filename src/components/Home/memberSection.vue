@@ -88,4 +88,8 @@ export default {
   height: auto;
   border-radius: 20px;
 }
+
+li {
+  list-style-type: none;
+}
 </style>
