@@ -7,13 +7,17 @@
         <p>維持費として使用させていただきます。</p>
       </div>
     </div>
+    <!-- TODO: 入会フォームのURL設定 -->
+    <Button message="入会はこちら" url="/" :hiyoko_icon="true" />
   </sectionLayout>
 </template>
 <script>
 import SectionLayout from './SectionLayout.vue'
+import Button from '../common/Button.vue'
 export default {
   components: {
-    SectionLayout
+    SectionLayout,
+    Button
   }
 }
 </script>

@@ -14,7 +14,7 @@
         </li>
       </ul>
     </div>
-    <Button :message="buttonMessage" :url="buttonURL" />
+    <Button message="メンバーページ" url="/member" />
   </sectionLayout>
 </template>
 <script>
@@ -27,8 +27,6 @@ export default {
   },
   data() {
     return {
-      buttonMessage: 'メンバーページ',
-      buttonURL: '/member',
       // TODO: 写真のトリミング
       members: [
         'sugawara',
