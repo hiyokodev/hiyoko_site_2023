@@ -1,5 +1,5 @@
 <template>
-  <sectionLayout title="Price">
+  <sectionLayout title="Question">
     <div class="content" v-for="content in contents" :key="content.question">
       <div class="question">
         <div class="question_icon">Q</div>
