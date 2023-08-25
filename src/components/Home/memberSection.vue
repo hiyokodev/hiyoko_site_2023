@@ -77,7 +77,7 @@ export default {
   align-items: center;
   margin: 0;
   padding: 0;
-  animation: loop infinite linear 30s both;
+  animation: loop infinite linear 60s both;
 }
 .slide {
   margin: 0 20px;
