@@ -5,12 +5,12 @@
       <!-- FIXME: 見切れ防止のために同じリストを2つ並べている。よりよい方法があれば修正する -->
       <ul class="scroll-list">
         <li v-for="member in members" :key="member">
-          <img class="slide" :src="`src/assets/img/Members/${member}.jpg`" alt="" />
+          <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
         </li>
       </ul>
       <ul class="scroll-list">
         <li v-for="member in members" :key="member">
-          <img class="slide" :src="`src/assets/img/Members/${member}.jpg`" alt="" />
+          <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
         </li>
       </ul>
     </div>
@@ -27,20 +27,19 @@ export default {
   },
   data() {
     return {
-      // TODO: 写真のトリミング
       members: [
         'sugawara',
-        'tauchi',
-        'koyama',
         'kawai',
-        'takasu',
-        'kinomoto',
-        'honda',
+        'koyama',
+        'tauchi',
         'kobayashi',
-        'kamiya',
+        'kinomoto',
         'tanaka',
+        'honda',
         'nomura',
         'sasaki',
+        'kamiya',
+        'takasu',
         'kunibe',
         'saijo'
       ]
@@ -78,7 +77,7 @@ export default {
   align-items: center;
   margin: 0;
   padding: 0;
-  animation: loop infinite linear 60s both;
+  animation: loop infinite linear 30s both;
 }
 .slide {
   margin: 0 20px;
