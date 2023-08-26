@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <BackgroundEggs />
+  <!-- <BackgroundEggs /> -->
   <RouterView />
   <Footer />
 </template>

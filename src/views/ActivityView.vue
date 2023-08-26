@@ -36,8 +36,6 @@
       <div class="button">
         <a class="btn">入会はこちら</a>
       </div>
-
-      <img src="@/assets/img/hiyoko_3_01.png" class="hiyoko_img" />
     </div>
   </main>
 </template>
@@ -204,12 +202,12 @@ h2 {
   top: 4px;
 }
 
-.hiyoko_img {
+/* .hiyoko_img {
   width: 400px;
   height: 150px;
   float: right;
   margin-top: 150px;
-}
+} */
 
 /* .back_egg2 {
   margin-top: 1000px;
