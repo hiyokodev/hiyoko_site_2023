@@ -5,6 +5,7 @@
       <span>どの集まりも任意参加なので、</span>
       <span>興味があるものだけ参加でOK！</span>
     </p>
+    <!-- FIXME: スマートフォンビューだとカレンダー画像が小さくて見にくい -->
     <div class="Image_Container">
       <img src="@/assets/img/Home/calender.png" />
     </div>
@@ -45,6 +46,11 @@ img {
     width: 200px;
     height: auto;
     border-radius: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .description {
+    margin: 0 0 20px 0;
   }
 }
 </style>

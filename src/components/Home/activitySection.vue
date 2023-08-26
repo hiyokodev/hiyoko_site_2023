@@ -83,6 +83,9 @@ span {
   }
 }
 @media screen and (max-width: 600px) {
+  .description {
+    margin: 0 0 20px 0;
+  }
   .contents {
     display: block;
   }
