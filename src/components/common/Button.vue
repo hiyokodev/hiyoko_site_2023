@@ -34,7 +34,7 @@ export default {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 250px;
 }
 .Button {
   display: block;
