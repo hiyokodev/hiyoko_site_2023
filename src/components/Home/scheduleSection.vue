@@ -1,7 +1,9 @@
 <template>
   <sectionLayout title="Schedule">
     <p class="description">
-      1ヶ月の活動内容のイメージです。<br />どの集まりも任意参加なので、興味があるものだけ参加でOK！
+      1ヶ月の活動内容のイメージです。<br />
+      <span>どの集まりも任意参加なので、</span>
+      <span>興味があるものだけ参加でOK！</span>
     </p>
     <div class="Image_Container">
       <img src="@/assets/img/Home/calender.png" />
@@ -20,6 +22,10 @@ export default {
 .description {
   margin: 0 0 50px 0;
   line-height: 40px;
+}
+
+span {
+  display: inline-block;
 }
 .Image_Container {
   margin: 0 auto;

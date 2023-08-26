@@ -81,4 +81,16 @@ img {
     height: 70px;
   }
 }
+@media screen and (max-width: 600px) {
+  .Button_Container {
+    margin-top: 30px;
+    width: 180px;
+  }
+  .Image_Container {
+    position: absolute;
+    top: -10px;
+    left: -55px;
+    height: 60px;
+  }
+}
 </style>

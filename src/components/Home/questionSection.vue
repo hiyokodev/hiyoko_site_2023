@@ -155,4 +155,47 @@ img {
     width: 100px;
   }
 }
+@media screen and (max-width: 600px) {
+  .question {
+    display: flex;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .question_icon {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+  }
+
+  .question_text {
+    padding-left: 10px;
+    line-height: 26px;
+  }
+  .answer {
+    display: flex;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .answer_icon {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+  }
+
+  .answer_text {
+    padding-left: 10px;
+    line-height: 26px;
+  }
+  .img-container {
+    margin: 10px auto;
+    text-align: center;
+  }
+  img {
+    width: 80px;
+  }
+
+  .spacer {
+    display: none;
+  }
+}
 </style>

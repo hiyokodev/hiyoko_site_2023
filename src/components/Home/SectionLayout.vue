@@ -40,4 +40,16 @@ h2 {
     font-size: 50px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 10px;
+    margin-bottom: 100px;
+    font-size: 14px;
+  }
+  h2 {
+    margin: 0 0 20px 0;
+    font-size: 32px;
+  }
+}
 </style>

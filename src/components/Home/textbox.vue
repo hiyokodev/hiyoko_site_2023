@@ -22,4 +22,19 @@ export default {}
 .textbox_inner {
   padding: 50px;
 }
+@media screen and (max-width: 600px) {
+  .textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 20px;
+    background-color: rgba(230, 230, 230, 0.7);
+  }
+
+  .textbox_inner {
+    padding: 50px 10px;
+  }
+}
 </style>
