@@ -6,12 +6,20 @@
       <h2>Member</h2>
       <div class="btn">
         <div class="photos">
+          <div><img src="@/assets/img/kamiya_hitomi1.jpg" /></div>
+          <div><img src="@/assets/img/kawai_rika1.jpg" /></div>
+          <div><img src="@/assets/img/kinomoto_yuka1.jpg" /></div>
+          <div><img src="@/assets/img/kobayashi_yosiaki1.jpg" /></div>
+          <div><img src="@/assets/img/sasaki_syun1.jpg" /></div>
           <div><img src="@/assets/img/tauti_akane1.jpg" /></div>
           <div><img src="@/assets/img/takasu_masayuki1.jpg" /></div>
-          <div><img src="@/assets/img/kunibe_mayu1.jpg" /></div>
-          <div><img src="@/assets/img/saijyo_yume1.jpg" /></div>
-          <div><img src="@/assets/img/koyama_wataru1.jpg" /></div>
+          <div><img src="@/assets/img/koyama_kou1.jpg" /></div>
           <div><img src="@/assets/img/nomura_mao1.jpg" /></div>
+          <div><img src="@/assets/img/honda_mai1.jpg" /></div>
+          <div><img src="@/assets/img/sugawara_huta1.jpg" /></div>
+          <div><img src="@/assets/img/saijyo_yume1.jpg" /></div>
+          <div><img src="@/assets/img/kunibe_mayu1.jpg" /></div>
+          <div><img src="@/assets/img/tanaka_shion1.jpg" /></div>
         </div>
       </div>
     </div>
@@ -30,7 +38,7 @@ export default {}
 }
 
 h2 {
-  font-family: Century;
+  font-family: Mamelon;
   font-size: 60px;
   text-shadow: 1px 2px 3px #808080;
 }
