@@ -44,6 +44,8 @@ export default {
   padding: 12px 24px;
   background-color: #fbea92;
   color: #333;
+  font-family: 'Yomogi';
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
