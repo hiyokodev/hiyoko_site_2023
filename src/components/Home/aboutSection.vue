@@ -17,16 +17,20 @@
       <br />
       <p class="text">そんな思いを抱えた仲間が集まっています。</p>
     </textbox>
+    <!-- TODO: 入会フォームのURL設定 -->
+    <Button message="入会はこちら！" url="/" :hiyoko_icon="true" />
   </sectionLayout>
 </template>
 
 <script>
 import SectionLayout from './SectionLayout.vue'
 import textbox from './textbox.vue'
+import Button from '../common/Button.vue'
 export default {
   components: {
     SectionLayout,
-    textbox
+    textbox,
+    Button
   }
 }
 </script>
