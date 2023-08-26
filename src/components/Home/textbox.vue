@@ -20,7 +20,14 @@ export default {}
 }
 
 .textbox_inner {
-  padding: 50px;
+  padding: 50px 10px;
+  font-size: 18px;
+}
+@media screen and (max-width: 834px) {
+  .textbox_inner {
+    padding: 50px 25px;
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 600px) {
   .textbox {
@@ -35,6 +42,7 @@ export default {}
 
   .textbox_inner {
     padding: 50px 10px;
+    font-size: 14px;
   }
 }
 </style>
