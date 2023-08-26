@@ -22,8 +22,4 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  position: relative;
-}
-</style>
+<style></style>

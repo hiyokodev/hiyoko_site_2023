@@ -1,5 +1,5 @@
 <template>
-  <!-- <BackgroundEggs /> -->
+  <BackgroundEggs />
   <RouterView />
   <Footer />
 </template>
@@ -14,4 +14,15 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style>
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-y: auto;
+}
+</style>

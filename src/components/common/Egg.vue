@@ -1,8 +1,10 @@
 <template>
-  <div
+  <img
+    src="@/assets/img/Common/background_egg.png"
     class="egg"
-    :style="{ top: top + 'px', left: (initialLeft * windowWidth) / 100 + 'px' }"
-  ></div>
+    :style="{ top: top + 'px', left: initialLeft + '%' }"
+    alt="Egg"
+  />
 </template>
 
 <script>
@@ -19,24 +21,18 @@ export default {
   },
   data() {
     return {
-      top: this.initialTop,
-      windowWidth: window.innerWidth // ウィンドウの幅を保存
+      top: this.initialTop
     }
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('resize', this.handleResize)
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('resize', this.handleResize)
   },
   methods: {
     handleScroll() {
-      this.top = this.initialTop + window.pageYOffset / 8
-    },
-    handleResize() {
-      this.windowWidth = window.innerWidth
+      this.top = this.initialTop + window.pageYOffset / 2
     }
   }
 }
@@ -45,11 +41,8 @@ export default {
 <style scoped>
 .egg {
   position: absolute;
-  width: 200px;
-  height: 300px;
-  background-color: rgba(255, 255, 204, 0.5);
-  border-radius: 50%;
-  transform: rotate(45deg);
-  z-index: -1;
+  width: 300px;
+  z-index: -10;
+  bottom: 0;
 }
 </style>
