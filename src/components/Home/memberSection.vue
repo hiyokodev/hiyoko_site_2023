@@ -18,7 +18,6 @@ section {
 .background {
   width: 100%;
   height: 100%;
-  background-color: lightgoldenrodyellow;
   position: absolute;
   z-index: -2;
 }
@@ -29,5 +28,8 @@ section {
 
 h2 {
   text-align: center;
+  font-size: 60px;
+  font-family: 'Mamelon';
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 </style>

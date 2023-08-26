@@ -16,6 +16,7 @@
     </div>
   </section>
 </template>
+
 <script>
 export default {}
 </script>
@@ -26,10 +27,9 @@ section {
 
 h2 {
   text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: 'Bitter', serif;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 60px;
+  font-family: 'Mamelon';
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .text-box {
@@ -43,6 +43,7 @@ h2 {
 .text {
   margin: 40px 0;
   text-align: center;
+  font-family: 'Yomogi';
   opacity: 100%;
 }
 </style>
