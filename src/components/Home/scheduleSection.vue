@@ -1,35 +1,32 @@
 <template>
-  <section>
-    <div class="background"></div>
-    <div class="contents">
-      <h2>Schedule</h2>
+  <sectionLayout title="Schedule">
+    <p class="description">
+      1ヶ月の活動内容のイメージです。<br />どの集まりも任意参加なので、興味があるものだけ参加でOK！
+    </p>
+    <div class="Image_Container">
+      <img src="@/assets/img/Home/calender.png" />
     </div>
-  </section>
+  </sectionLayout>
 </template>
 <script>
-export default {}
+import SectionLayout from './SectionLayout.vue'
+export default {
+  components: {
+    SectionLayout
+  }
+}
 </script>
 <style scoped>
-section {
-  height: 500px;
-  position: relative;
+.description {
+  margin: 50px;
+  line-height: 40px;
+}
+.Image_Container {
+  margin: 0 auto;
+  max-width: 800px;
 }
 
-.background {
+img {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
-.contents {
-  padding: 20px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 </style>

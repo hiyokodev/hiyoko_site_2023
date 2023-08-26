@@ -39,6 +39,7 @@ header {
   display: flex;
   justify-content: end;
   padding: 30px;
+  background-color: #ffffe5;
 }
 
 .Nav_Container {
