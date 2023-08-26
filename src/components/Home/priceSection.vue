@@ -1,14 +1,13 @@
 <template>
   <sectionLayout title="Price">
-    <div class="text-box">
-      <div class="text-box-inner">
-        <p class="text-large">100円 / 月</p>
-        <p>集めたお金はひよこ開発の</p>
-        <p>維持費として使用させていただきます。</p>
+    <div class="textbox">
+      <div class="textbox_inner">
+        <p class="text_price">年会費：1,000円</p>
+        <p class="text_desc">集めたお金は維持費に使わせていただきます。</p>
       </div>
     </div>
     <!-- TODO: 入会フォームのURL設定 -->
-    <Button message="入会はこちら" url="/" :hiyoko_icon="true" />
+    <Button message="入会はこちら！" url="/" :hiyoko_icon="true" />
   </sectionLayout>
 </template>
 <script>
@@ -22,30 +21,26 @@ export default {
 }
 </script>
 <style scoped>
-.text-box {
-  position: relative; /* ←文字の親要素に指定 */
+.textbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 20px;
   background-color: rgba(230, 230, 230, 0.7);
-  max-width: 650px;
-  margin: 20px auto;
-  border-radius: 50px;
-  padding: 150px;
-  font-family: 'Yomogi';
 }
 
-.text-box-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 18px;
+.textbox_inner {
+  padding: 50px 0;
 }
 
-.text-large {
-  text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 10px;
+.text_price {
+  margin: 0;
+  font-family: 'Mamelon';
+  font-size: 40px;
+}
+.text_desc {
+  margin: 20px 0 0 0;
 }
 </style>
