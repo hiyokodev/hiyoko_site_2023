@@ -5,6 +5,11 @@
     <div class="contents">
       <h2>Member</h2>
       <div class="btn">
+        <Website />
+        <LT />
+        <Events />
+        <Button message="入会はこちら！" url="/" />
+
         <div class="photos">
           <div><img src="@/assets/img/kamiya_hitomi1.jpg" /></div>
           <div><img src="@/assets/img/kawai_rika1.jpg" /></div>
@@ -27,9 +32,24 @@
 </template>
 
 <script>
-export default {}
+import Website from '../components/Activity/Website.vue'
+import LT from '../components/Activity/LT.vue'
+import Events from '../components/Activity/Events.vue'
+import Button from '../components/common/Button.vue'
+
+export default {
+  components: {
+    Website,
+    LT,
+    Events,
+    Button
+  }
+}
 </script>
 <style scoped>
+main {
+  padding: 20px;
+}
 .contents {
   text-align: center;
   margin: 0 auto;
