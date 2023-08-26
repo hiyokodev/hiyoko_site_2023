@@ -1,15 +1,23 @@
 <template>
-  <header>
-    <div class="Nav_Container">
-      <nav v-for="Link in Links" :key="Link.name">
-        <RouterLink class="Link" :to="Link.path">{{ Link.name }}</RouterLink>
-      </nav>
-    </div>
-  </header>
+  <div :style="{ 'background-color': backgroundColor }">
+    <header>
+      <div class="Nav_Container">
+        <nav v-for="Link in Links" :key="Link.name">
+          <RouterLink class="Link" :to="Link.path">{{ Link.name }}</RouterLink>
+        </nav>
+      </div>
+    </header>
+  </div>
 </template>
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 export default {
+  props: {
+    backgroundColor: {
+      type: String,
+      default: 'white'
+    }
+  },
   data: () => {
     return {
       Links: [
@@ -39,7 +47,7 @@ header {
   display: flex;
   justify-content: end;
   padding: 30px;
-  background-color: #ffffe5;
+  /* background-color: #ffffe5; */
 }
 
 .Nav_Container {
