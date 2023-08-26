@@ -133,4 +133,26 @@ img {
 .spacer {
   height: 30px;
 }
+@media screen and (max-width: 834px) {
+  .content {
+    max-width: 600px;
+  }
+  .question {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+  }
+  .answer {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+  }
+  .img-container {
+    margin: 20px auto;
+    text-align: center;
+  }
+  img {
+    width: 100px;
+  }
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
   <sectionLayout title="What is ひよこ開発">
-    <div class="text-box">
+    <textbox>
       <p class="text">
         「ひよこ開発」はメンバー同士の交流や情報交換、勉強のきっかけづくりを目的とした<br />
         有志による若手のみのコミュニティです。
@@ -12,27 +12,21 @@
         「勉強のモチベーションを上げたい」
       </p>
       <p class="text">そんな思いを抱えた仲間が集まっています。</p>
-    </div>
+    </textbox>
   </sectionLayout>
 </template>
 
 <script>
 import SectionLayout from './SectionLayout.vue'
+import textbox from './textbox.vue'
 export default {
   components: {
-    SectionLayout
+    SectionLayout,
+    textbox
   }
 }
 </script>
 <style scoped>
-.text-box {
-  background-color: rgba(230, 230, 230, 0.7);
-  max-width: 650px;
-  margin: 20px auto;
-  border-radius: 50px;
-  padding: 40px;
-}
-
 .text {
   margin: 40px 0;
   text-align: center;

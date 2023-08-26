@@ -39,7 +39,7 @@ export default {
 </script>
 <style scoped>
 .description {
-  margin: 50px;
+  margin: 0 0 50px 0;
 }
 .contents {
   display: flex;
@@ -62,5 +62,19 @@ img {
 .content_desc {
   margin: 0;
   font-size: 18px;
+}
+@media screen and (max-width: 834px) {
+  .description {
+    margin: 0 0 30px 0;
+  }
+
+  .content {
+    max-width: 400px;
+    padding: 5px;
+  }
+  .content_desc {
+    margin: 0;
+    font-size: 12px;
+  }
 }
 </style>

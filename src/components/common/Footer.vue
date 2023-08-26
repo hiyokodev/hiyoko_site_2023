@@ -34,4 +34,9 @@ img {
   font-size: 14px;
   text-align: center;
 }
+@media screen and (max-width: 834px) {
+  .Image_Container {
+    height: 70px;
+  }
+}
 </style>

@@ -49,7 +49,7 @@ export default {
 </script>
 <style scoped>
 .description {
-  margin: 50px;
+  margin: 0 0 50px 0;
 }
 
 @keyframes loop {
@@ -77,7 +77,7 @@ export default {
   align-items: center;
   margin: 0;
   padding: 0;
-  animation: loop infinite linear 60s both;
+  animation: loop infinite linear 50s both;
 }
 .slide {
   margin: 0 20px;
@@ -88,5 +88,16 @@ export default {
 
 li {
   list-style-type: none;
+}
+@media screen and (max-width: 834px) {
+  .description {
+    margin: 0 0 30px 0;
+  }
+  .slide {
+    margin: 0 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
 }
 </style>

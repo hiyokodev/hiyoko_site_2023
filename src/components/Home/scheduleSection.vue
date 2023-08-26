@@ -18,7 +18,7 @@ export default {
 </script>
 <style scoped>
 .description {
-  margin: 50px;
+  margin: 0 0 50px 0;
   line-height: 40px;
 }
 .Image_Container {
@@ -28,5 +28,17 @@ export default {
 
 img {
   width: 100%;
+}
+@media screen and (max-width: 834px) {
+  .description {
+    margin: 0 0 30px 0;
+    line-height: 28px;
+  }
+  .slide {
+    margin: 0 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
 }
 </style>
