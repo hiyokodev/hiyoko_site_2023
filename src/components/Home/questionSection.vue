@@ -13,27 +13,32 @@
         <img src="@/assets/img/Home/footprints_three.png" />
       </div>
     </div>
+    <div class="spacer"></div>
+    <!-- TODO: 入会フォームのURL設定 -->
+    <Button message="入会はこちら" url="/" :hiyoko_icon="true" />
   </sectionLayout>
 </template>
 
 <script>
 import SectionLayout from './SectionLayout.vue'
+import Button from '../common/Button.vue'
 export default {
   components: {
-    SectionLayout
+    SectionLayout,
+    Button
   },
   data() {
     return {
       contents: [
         {
-          question: 'メンバーは何人くらい。',
+          question: 'メンバーは何人くらいですか？',
           answer:
             '約30名ほどで活動中で、男女ともに参加しやすい雰囲気です。お一人で飛び込むのが不安という方は、ご友人と一緒に参加されるのもよいと思います。'
         },
         {
-          question: '参加するにあたり、何か必要なものはありますか。',
+          question: '参加するにあたり、何か必要なものはありますか？',
           answer:
-            '特にありません。活動に使用するツール（Slack・Notion・Zoom）がPCやスマートフォンから利用できれば大丈夫です。'
+            '特にありません。活動に使用するツール（Discord・Notion等）がPCやスマートフォンから利用できれば大丈夫です。'
         },
         {
           question: '入ったらまずどんなことをするのでしょうか。',
@@ -44,6 +49,11 @@ export default {
           question: '仕事が忙しくなった場合、活動に参加できるか不安です。',
           answer:
             '活動はすべて任意参加なので、ご自身のスケジュール優先で大丈夫です。内容はアーカイブに残るので、後から確認することもできます。'
+        },
+        {
+          question: '地方配属や転職で環境が変わっても参加できますか？',
+          answer:
+            'オンライン中心の活動なので問題ありません。地方から参加されたり、転職後も引き続き在籍しているメンバーも多いです。'
         },
         {
           question: '上記の活動以外のこともしてみたいのですが、できるのでしょうか。',
@@ -57,11 +67,13 @@ export default {
 }
 </script>
 <style scoped>
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .question {
   display: flex;
   padding: 15px;
-  font-weight: bold;
-  font-size: 20px;
   text-align: left;
 }
 
@@ -87,7 +99,6 @@ export default {
 .answer {
   display: flex;
   padding: 15px;
-  font-size: 18px;
   text-align: left;
 }
 
@@ -117,5 +128,9 @@ export default {
 
 img {
   width: 150px;
+}
+
+.spacer {
+  height: 30px;
 }
 </style>
