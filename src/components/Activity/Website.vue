@@ -22,7 +22,9 @@ export default {}
 <style scoped>
 .container {
   position: relative;
-  height: 1000px;
+  margin: 0 auto;
+  max-width: 1000px;
+  height: 100vw;
 }
 h2 {
   text-align: left;
@@ -48,17 +50,21 @@ p {
 .website_img {
   position: absolute;
   top: 100px;
-  left: 500px;
-  width: 700px;
+  right: 0;
+  width: 70vw;
+  min-width: 600px;
+  max-width: 800px;
   opacity: 0.9;
   border-radius: 15px;
   box-shadow: 0 8px 8px 0 rgba(65, 65, 65, 0.422);
 }
 .website_whitebox {
   position: absolute;
-  top: 400px;
-  left: 150px;
-  width: 600px;
+  top: calc(10% + 300px);
+  left: 0;
+  width: 90vw;
+  min-width: 550px;
+  max-width: 700px;
   height: 400px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 8px 8px 0 rgba(65, 65, 65, 0.422);

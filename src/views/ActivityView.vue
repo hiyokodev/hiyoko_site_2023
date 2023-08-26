@@ -37,10 +37,8 @@ main {
 }
 
 h2 {
-  text-align: left;
   font-family: 'Memelon';
   font-size: 50px;
-  padding-left: 7%;
 }
 
 p {
