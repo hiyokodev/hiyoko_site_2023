@@ -34,4 +34,23 @@ img {
   font-size: 14px;
   text-align: center;
 }
+@media screen and (max-width: 834px) {
+  .Image_Container {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Image_Container {
+    padding-right: 20px;
+  }
+  .Image_Container {
+    height: 50px;
+  }
+  .Footer {
+    height: 20px;
+  }
+  .Footer_Text {
+    font-size: 12px;
+  }
+}
 </style>
