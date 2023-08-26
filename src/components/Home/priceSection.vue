@@ -1,40 +1,27 @@
 <template>
   <sectionLayout title="Price">
-    <div class="textbox">
-      <div class="textbox_inner">
-        <p class="text_price">年会費：1,000円</p>
-        <p class="text_desc">集めたお金は維持費に使わせていただきます。</p>
-      </div>
-    </div>
+    <textbox>
+      <p class="text_price">年会費：1,000円</p>
+      <p class="text_desc">集めたお金は維持費に使わせていただきます。</p>
+    </textbox>
     <!-- TODO: 入会フォームのURL設定 -->
     <Button message="入会はこちら！" url="/" :hiyoko_icon="true" />
   </sectionLayout>
 </template>
 <script>
 import SectionLayout from './SectionLayout.vue'
+import textbox from './textbox.vue'
 import Button from '../common/Button.vue'
+import textboxVue from './textbox.vue'
 export default {
   components: {
     SectionLayout,
+    textbox,
     Button
   }
 }
 </script>
 <style scoped>
-.textbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 800px;
-  border-radius: 20px;
-  background-color: rgba(230, 230, 230, 0.7);
-}
-
-.textbox_inner {
-  padding: 50px 0;
-}
-
 .text_price {
   margin: 0;
   font-family: 'Mamelon';
@@ -42,5 +29,13 @@ export default {
 }
 .text_desc {
   margin: 20px 0 0 0;
+}
+@media screen and (max-width: 834px) {
+  .text_price {
+    font-size: 30px;
+  }
+  .text_desc {
+    margin: 10px 0 0 0;
+  }
 }
 </style>

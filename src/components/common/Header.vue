@@ -55,4 +55,22 @@ header {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
+@media screen and (max-width: 834px) {
+  header {
+    padding: 25px;
+  }
+  .Link {
+    margin: 0 12px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 20px 10px;
+  }
+  .Link {
+    margin: 0 8px;
+    font-size: 15px;
+  }
+}
 </style>

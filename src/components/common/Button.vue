@@ -69,4 +69,28 @@ export default {
 img {
   height: 100%;
 }
+@media screen and (max-width: 834px) {
+  .Button_Container {
+    margin-top: 40px;
+    width: 200px;
+  }
+  .Image_Container {
+    position: absolute;
+    top: -15px;
+    left: -70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Button_Container {
+    margin-top: 30px;
+    width: 180px;
+  }
+  .Image_Container {
+    position: absolute;
+    top: -10px;
+    left: -55px;
+    height: 60px;
+  }
+}
 </style>

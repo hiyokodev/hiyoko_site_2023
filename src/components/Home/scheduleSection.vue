@@ -1,8 +1,11 @@
 <template>
   <sectionLayout title="Schedule">
     <p class="description">
-      1ヶ月の活動内容のイメージです。<br />どの集まりも任意参加なので、興味があるものだけ参加でOK！
+      1ヶ月の活動内容のイメージです。<br />
+      <span>どの集まりも任意参加なので、</span>
+      <span>興味があるものだけ参加でOK！</span>
     </p>
+    <!-- FIXME: スマートフォンビューだとカレンダー画像が小さくて見にくい -->
     <div class="Image_Container">
       <img src="@/assets/img/Home/calender.png" />
     </div>
@@ -18,8 +21,12 @@ export default {
 </script>
 <style scoped>
 .description {
-  margin: 50px;
+  margin: 0 0 50px 0;
   line-height: 40px;
+}
+
+span {
+  display: inline-block;
 }
 .Image_Container {
   margin: 0 auto;
@@ -28,5 +35,22 @@ export default {
 
 img {
   width: 100%;
+}
+@media screen and (max-width: 834px) {
+  .description {
+    margin: 0 0 30px 0;
+    line-height: 28px;
+  }
+  .slide {
+    margin: 0 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .description {
+    margin: 0 0 20px 0;
+  }
 }
 </style>
