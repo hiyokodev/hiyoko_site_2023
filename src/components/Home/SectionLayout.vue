@@ -19,7 +19,7 @@ export default {
 <style scoped>
 section {
   padding: 20px;
-  margin-top: 100px;
+  margin-bottom: 100px;
   font-size: 20px;
   font-family: 'Yomogi';
   text-align: center;

@@ -10,9 +10,6 @@
 </template>
 
 <style scoped>
-footer {
-  margin-top: 50px;
-}
 .Image_Container {
   padding-right: 50px;
   height: 100px;

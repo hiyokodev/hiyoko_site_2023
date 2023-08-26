@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="Img_Container">
-      <img src="@/assets/img/Home/top.png" />
+      <img src="@/assets/img/Home/top_pc.png" />
     </div>
   </section>
 </template>
@@ -9,9 +9,7 @@
 export default {}
 </script>
 <style scoped>
-/* TODO: ヘッダーと合わせて背景色を変更（透過版の画像待ち） */
 section {
-  /* padding-bottom: 50px; */
   background-color: #ffffe5;
 }
 .Img_Container {
