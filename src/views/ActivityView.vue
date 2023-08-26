@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <main>
     <!-- 背景の他の卵はスクロールするものを別途作成するためここでは記述しない -->
