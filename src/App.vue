@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style>
+html,
 body {
   position: relative;
   overflow-x: hidden;
