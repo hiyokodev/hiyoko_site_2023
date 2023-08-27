@@ -3,11 +3,16 @@
   <main>
     <BackgroundEggs :eggsInfo="eggsInfo" />
     <h2 class="top">Activity</h2>
+    <p class="description">
+      <!-- TODO: 文言修正 -->
+      ひよこ開発で実施中の主な活動です。<br />
+      （仮）今後はもっと増える、やりたいことを始めてみよう的な!
+    </p>
     <div class="contents">
       <Website />
       <LT />
       <Events />
-      <Button message="入会はこちら！" url="#" />
+      <Button message="入会はこちら！" url="https://forms.gle/jB3XFHcYaj2oLnwy5" />
     </div>
   </main>
 </template>
@@ -66,6 +71,11 @@ main {
   font-size: 60px;
   font-family: 'Mamelon';
   text-shadow: 1px 2px 3px #808080;
+}
+.description {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Yomogi';
 }
 
 .contents {

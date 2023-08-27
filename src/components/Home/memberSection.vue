@@ -2,12 +2,11 @@
   <!-- <sectionLayout title="Member" style="padding: 0"> -->
   <sectionLayout title="Member">
     <p class="description">
-      <span>約30名ほどで活動中で、</span>
-      <span>男女ともに参加しやすい雰囲気です。</span>
+      <span>所属部署や仕事も様々な、個性豊かな仲間たちです。</span>
     </p>
     <div class="scroll_pc_container">
       <div class="scroll_pc">
-        <!-- FIXME: 見切れ防止のために同じリストを2つ並べている。よりよい方法があれば修正する -->
+        <!-- TODO: 見切れ防止のために同じリストを2つ並べている。よりよい方法があれば修正する -->
         <MembersScroll />
         <MembersScroll />
       </div>

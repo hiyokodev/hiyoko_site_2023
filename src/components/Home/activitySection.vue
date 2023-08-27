@@ -1,6 +1,6 @@
 <template>
   <SectionLayout title="Activity">
-    <p class="description">さぁ、はじめてみよう。</p>
+    <p class="description">ひよこ開発の主な活動です。</p>
     <div class="contents">
       <div class="content">
         <img src="@/assets/img//Home/activity_website.webp" />

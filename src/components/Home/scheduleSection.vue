@@ -2,10 +2,9 @@
   <sectionLayout title="Schedule">
     <p class="description">
       1ヶ月の活動内容のイメージです。<br />
-      <span>どの集まりも任意参加なので、</span>
-      <span>興味があるものだけ参加でOK！</span>
+      <span>仕事やプライベート時間に合わせて、</span>
+      <span>任意で参加OK！</span>
     </p>
-    <!-- FIXME: スマートフォンビューだとカレンダー画像が小さくて見にくい -->
     <div class="Image_Container">
       <img src="@/assets/img/Home/calender.png" />
     </div>
