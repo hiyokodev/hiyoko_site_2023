@@ -44,6 +44,8 @@ export default {
   padding: 12px 24px;
   background-color: #fbea92;
   color: #333;
+  font-family: 'Yomogi';
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -82,9 +84,12 @@ img {
   }
 }
 @media screen and (max-width: 600px) {
+  .Button {
+    font-size: 16px;
+  }
   .Button_Container {
     margin-top: 30px;
-    width: 180px;
+    width: 200px;
   }
   .Image_Container {
     position: absolute;

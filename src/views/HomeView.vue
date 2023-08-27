@@ -66,16 +66,16 @@ export default {
           { top: 1900, left: 60 },
           { top: 2200, left: 20 },
           { top: 2500, left: 80 },
-          { top: 2800, left: -5 },
-          { top: 3100, left: 65 }
+          { top: 2800, left: -5 }
         ]
       }
     }
   }
 }
 </script>
-<style scoped>
+<style>
 main {
   height: auto;
+  overflow: hidden;
 }
 </style>
