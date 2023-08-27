@@ -1,85 +1,99 @@
 <template>
-  <div class="container">
-    <img src="@/assets/img/events_egg.png" class="events_egg" />
-    <img src="@/assets/img/events.jpg" class="events_img" />
-    <div class="events_whitebox">
-      <h2>Events</h2>
-      <p>
-        ひよこ開発ではお勉強以外にも月に1回イベントを企画しています。<br />
-        BBQや飲み会、おうちでゲームなどなど、ジャンルも参加メンバーも毎回違って楽しい！<br />
-        ぜひたくさんのイベントに参加してくださいね！<br />
-        イベント参加のみでも大丈夫です！<br />
-      </p>
-      <p>人脈つくりたい方、休日を充実させたい方、<br />どんな方でも大歓迎です。</p>
+  <!-- PC -->
+  <div class="pc_view">
+    <div class="img_container">
+      <img src="@/assets/img/Activity/tmp_events.png" class="content_img" />
     </div>
-    <img src="@/assets/img/hiyoko_02.png" class="events_hiyoko_img" />
-    <img src="@/assets/img/hiyoko_ashiato02.png" class="events_ashiato_img" />
+    <div class="hiyoko_container">
+      <img src="@/assets/img/hiyoko_02.png" class="events_hiyoko" />
+      <img src="@/assets/img/hiyoko_ashiato02.png" class="events_ashiato" />
+    </div>
+  </div>
+  <!-- スマートフォン -->
+  <div class="sp_view">
+    <div class="container">
+      <img src="@/assets/img/Activity/sp_events.png" class="content_img" />
+      <h3>Events</h3>
+
+      <p>
+        <span>ひよこ開発ではお勉強以外にも</span>
+        <span>月に1回イベントを企画しています。</span>
+      </p>
+      <p>
+        <span>BBQや飲み会、おうちでゲームなどなど、</span>
+        <span>たくさんのメンバーと楽しく交流できます！</span>
+      </p>
+      <p>
+        <span>人脈つくりたい方、休日を充実させたい方、</span>
+        <span>どんな方でも大歓迎です。</span>
+      </p>
+      <p>
+        <span>イベント参加のみでも大丈夫ですので、</span>
+        <span>ぜひお気軽に参加してくださいね！</span>
+      </p>
+    </div>
   </div>
 </template>
 
-<script>
-export default {}
-</script>
+<script></script>
 <style scoped>
-.container {
-  position: relative;
-  height: 1000px;
+.pc_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 100px auto;
 }
-h2 {
-  text-align: left;
-  font-family: 'Mamelon';
-  font-size: 50px;
-  padding-left: 7%;
+.sp_view {
+  display: none;
 }
-
-p {
-  padding-left: 7%;
-  padding-right: 7%;
-  font-size: 18px;
-  letter-spacing: 1.2px;
-  font-family: 'Yomogi';
+.img_container {
+  margin: 0 auto;
+  min-width: 800px;
 }
-
-.events_egg {
-  position: absolute;
-  top: 150px;
-  left: 200px;
-  width: 900px;
-  text-shadow: 1px 2px 3px #808080;
+.content_img {
+  width: 100%;
 }
-.events_img {
-  position: absolute;
-  top: 150px;
-  left: 400px;
-  width: 800px;
-  opacity: 0.9;
-  border-radius: 8%;
-  box-shadow: 0 8px 8px 0 rgba(65, 65, 65, 0.422);
+.hiyoko_container {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
 }
-
-.events_whitebox {
-  position: absolute;
-  top: 390px;
-  left: 150px;
-  width: 600px;
-  height: 400px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 8px 8px 0 rgba(65, 65, 65, 0.422);
-  border-radius: 15px;
-  padding-top: 5px;
-}
-
-.events_ashiato_img {
-  position: absolute;
-  top: 900px;
-  left: 700px;
-  height: 40px;
-  transform: skew(10deg, -5deg);
-}
-.events_hiyoko_img {
-  position: absolute;
-  top: 900px;
-  left: 600px;
+.events_hiyoko {
+  margin-top: 30px;
+  margin-right: 20px;
   height: 100px;
+}
+.events_ashiato {
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  span {
+    display: inline-block;
+  }
+  .pc_view {
+    display: none;
+  }
+  .sp_view {
+    display: block;
+  }
+  .container {
+    margin: 50px 0;
+    max-width: 600px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgba(230, 230, 230, 0.7);
+    overflow: hidden;
+  }
+  h3 {
+    margin: 10px 25px;
+    font-size: 30px;
+    font-family: 'Mamelon';
+  }
+  p {
+    margin: 10px 25px;
+    font-size: 14px;
+    font-family: 'Yomogi';
+  }
 }
 </style>
