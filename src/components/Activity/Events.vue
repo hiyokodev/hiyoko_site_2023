@@ -16,20 +16,17 @@
       <h3>Events</h3>
 
       <p>
-        <span>ひよこ開発ではお勉強以外にも</span>
-        <span>月に1回イベントを企画しています。</span>
+        <span>ひよこ開発では勉強以外にも</span>
+        <span>月に1回イベントを開催しています。</span>
       </p>
       <p>
-        <span>BBQや飲み会、おうちでゲームなどなど、</span>
-        <span>たくさんのメンバーと楽しく交流できます！</span>
+        <span>BBQや飲み会、ボードゲームなど、</span>
+        <span>毎回楽しい交流企画を用意しています。</span>
       </p>
       <p>
-        <span>人脈つくりたい方、休日を充実させたい方、</span>
-        <span>どんな方でも大歓迎です。</span>
-      </p>
-      <p>
-        <span>イベント参加のみでも大丈夫ですので、</span>
-        <span>ぜひお気軽に参加してくださいね！</span>
+        <span>普段の活動には参加できないけど</span>
+        <span>イベントは行きたい！というのも大歓迎です。</span>
+        <span>ぜひ気軽に参加してくださいね！</span>
       </p>
     </div>
   </div>
@@ -86,12 +83,12 @@
     overflow: hidden;
   }
   h3 {
-    margin: 10px 25px;
+    margin: 10px 20px;
     font-size: 30px;
     font-family: 'Mamelon';
   }
   p {
-    margin: 10px 25px;
+    margin: 10px 20px;
     font-size: 14px;
     font-family: 'Yomogi';
   }
