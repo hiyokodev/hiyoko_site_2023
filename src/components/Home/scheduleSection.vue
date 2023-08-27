@@ -1,35 +1,56 @@
 <template>
-  <section>
-    <div class="background"></div>
-    <div class="contents">
-      <h2>Schedule</h2>
+  <sectionLayout title="Schedule">
+    <p class="description">
+      1ヶ月の活動内容のイメージです。<br />
+      <span>どの集まりも任意参加なので、</span>
+      <span>興味があるものだけ参加でOK！</span>
+    </p>
+    <!-- FIXME: スマートフォンビューだとカレンダー画像が小さくて見にくい -->
+    <div class="Image_Container">
+      <img src="@/assets/img/Home/calender.png" />
     </div>
-  </section>
+  </sectionLayout>
 </template>
 <script>
-export default {}
+import SectionLayout from './SectionLayout.vue'
+export default {
+  components: {
+    SectionLayout
+  }
+}
 </script>
 <style scoped>
-section {
-  height: 500px;
-  position: relative;
+.description {
+  margin: 0 0 50px 0;
+  line-height: 40px;
 }
 
-.background {
+span {
+  display: inline-block;
+}
+.Image_Container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+img {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
 }
-
-.contents {
-  padding: 20px;
+@media screen and (max-width: 834px) {
+  .description {
+    margin: 0 0 30px 0;
+    line-height: 28px;
+  }
+  .slide {
+    margin: 0 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
 }
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+@media screen and (max-width: 600px) {
+  .description {
+    margin: 0 0 20px 0;
+  }
 }
 </style>

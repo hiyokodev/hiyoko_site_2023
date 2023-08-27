@@ -1,6 +1,9 @@
 <template>
+  <Header backgroundColor="#ffffe5" />
   <main>
     <!-- <BackgroundEggs /> -->
+
+    <topImageSection />
     <aboutSection />
     <memberSection />
     <activitySection />
@@ -10,6 +13,8 @@
   </main>
 </template>
 <script>
+import Header from '../components/common/Header.vue'
+import topImageSection from '../components/Home/topImageSection.vue'
 import aboutSection from '../components/Home/aboutSection.vue'
 import memberSection from '../components/Home/memberSection.vue'
 import activitySection from '../components/Home/activitySection.vue'
@@ -19,6 +24,8 @@ import questionSection from '../components/Home/questionSection.vue'
 import BackgroundEggs from '../components/common/BackgroundEggs.vue'
 export default {
   components: {
+    Header,
+    topImageSection,
     aboutSection,
     memberSection,
     activitySection,
@@ -29,4 +36,8 @@ export default {
   }
 }
 </script>
-<style scoped></style>
+<style scoped>
+main {
+  height: auto;
+}
+</style>

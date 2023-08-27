@@ -1,96 +1,108 @@
 <template>
-  <section>
-    <div class="background"></div>
+  <SectionLayout title="Activity">
+    <p class="description">さぁ、はじめてみよう。</p>
     <div class="contents">
-      <h2>Activity</h2>
-
-      <div class="activity">
-        <div class="activity-contents">
-          <img src="@/assets/img//Home/activity_website.jpeg" class="img" />
-          <p>WEB site</p>
+      <div class="content">
+        <img src="@/assets/img//Home/activity_website.png" />
+        <p class="content_title">Web Site</p>
+        <p class="content_desc"><span>自分たちだけで</span><span>Webサイト作り！</span></p>
+      </div>
+      <div class="content">
+        <div class="image_container">
+          <img src="@/assets/img/Home/activity_LT.png" />
         </div>
-        <div class="activity-contents">
-          <img src="@/assets/img/Home/activity_automation.jpeg" class="img" />
-          <p>Automation tools</p>
-        </div>
-        <div class="activity-contents">
-          <img src="@/assets/img/Home/activity_LT.jpeg" class="img" />
-          <p>Lightning talk</p>
+        <div class="text_container">
+          <p class="content_title">Lightning Talk</p>
+          <p class="content_desc"><span>テーマ自由の</span><span>プレゼンコーナー！</span></p>
         </div>
       </div>
-
-      <a class="btn">詳細はこちら→</a>
+      <div class="content">
+        <div class="image_container">
+          <img src="@/assets/img/Home/activity_events.png" />
+        </div>
+        <div class="text_container">
+          <p class="content_title">Events</p>
+          <p class="content_desc"><span>BBQや飲み会、</span><span>おうちでゲーム！</span></p>
+        </div>
+      </div>
     </div>
-  </section>
+    <Button message="詳しい内容はこちら" url="/activity" />
+  </SectionLayout>
 </template>
 <script>
-export default {}
+import SectionLayout from './SectionLayout.vue'
+import Button from '../common/Button.vue'
+export default {
+  components: {
+    SectionLayout,
+    Button
+  }
+}
 </script>
 <style scoped>
-section {
-  height: 700px;
-  position: relative;
+.description {
+  margin: 0 0 50px 0;
 }
-
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
 .contents {
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  max-width: 400px;
+  padding: 10px;
+}
+img {
+  width: 100%;
+  border-radius: 20px;
 }
 
-h2 {
-  text-align: center;
-  font-size: 60px;
+.content_title {
+  margin: 10px 0;
   font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-.activity-contents {
-  width: 300px;
-  padding: 10px 30px;
-  margin: 10px 30px;
-  background: rgba(230, 230, 230, 0.7);
-  border-bottom: solid 6px #c6cbd0;
-  border-right: solid 6px #c6cbd0;
-  border-radius: 9px;
+.content_desc {
+  margin: 0;
+  font-size: 18px;
+}
+span {
   display: inline-block;
 }
+@media screen and (max-width: 834px) {
+  .description {
+    margin: 0 0 30px 0;
+  }
 
-.activity-contents p {
-  font-family: 'Yomogi';
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 20px;
+  .content {
+    max-width: 400px;
+    padding: 5px;
+  }
+  .content_desc {
+    margin: 0;
+    font-size: 12px;
+  }
 }
+@media screen and (max-width: 600px) {
+  .description {
+    margin: 0 0 20px 0;
+  }
+  .contents {
+    display: block;
+  }
+  .content {
+    margin: 20px auto;
+    max-width: 300px;
+    padding: 10px;
+  }
+  .content_title {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: 'Mamelon';
+  }
 
-.img {
-  width: 250px;
-  height: 250px;
-  margin-top: 30px;
-  opacity: 0.95;
-}
-
-.btn {
-  padding: 8px 24px;
-  margin-top: 40px;
-  display: inline-block;
-  background: #fef9c6;
-  font-size: 20px;
-  border-radius: 3px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  border-bottom: solid 4px #dcd8ad;
-}
-
-.btn:active {
-  border-bottom: none;
-  position: relative;
-  top: 4px;
+  .content_desc {
+    margin: 0;
+    font-size: 14px;
+  }
 }
 </style>

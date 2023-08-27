@@ -1,97 +1,201 @@
 <template>
-  <section>
-    <div class="background"></div>
-    <div class="contents">
-      <h2>Question</h2>
-
-      <div class="questions">
-        <div class="question">
-          <p>Q.メンバーは何人くらい。</p>
-        </div>
-        <div class="answer">
-          <p>
-            A.約30名ほどで活動中で、男女ともに参加しやすい雰囲気です。お一人で飛び込むのが不安という方は、ご友人と一緒に参加されるのもよいと思います。
-          </p>
-        </div>
-
-        <div class="question">
-          <p>Q.参加するにあたり、何か必要なものはありますか。</p>
-        </div>
-        <div class="answer">
-          <p>
-            A.特にありません。活動に使用するツール（Slack・Notion・Zoom）がPCやスマートフォンから利用できれば大丈夫です。
-          </p>
-        </div>
-
-        <div class="question">
-          <p>Q.入ったらまずどんなことをするのでしょうか。</p>
-        </div>
-        <div class="answer">
-          <p>
-            A.スムーズに参加してもらうための各種説明会に加え、ツールの使い方や環境構築などのセットアップもサポートさせていただきます。<br />その後は定例会やオフラインイベントにご自由にご参加ください。
-          </p>
-        </div>
-
-        <div class="question">
-          <p>Q.仕事が忙しくなった場合、活動に参加できるか不安です。</p>
-        </div>
-        <div class="answer">
-          <p>
-            A.活動はすべて任意参加なので、ご自身のスケジュール優先で大丈夫です。内容はアーカイブに残るので、後から確認することもできます。
-          </p>
-        </div>
-
-        <div class="question">
-          <p>Q.上記の活動以外のこともしてみたいのですが、できるのでしょうか。</p>
-        </div>
-        <div class="answer">
-          <p>
-            A.やってみたいことの提案は大歓迎です。ここに載せきれていない活動も多くありますし、アイデアは常に募集中です。
-          </p>
-        </div>
+  <sectionLayout title="Question">
+    <div class="content" v-for="content in contents" :key="content.question">
+      <div class="question">
+        <div class="question_icon">Q</div>
+        <p class="question_text">{{ content.question }}</p>
+      </div>
+      <div class="answer">
+        <div class="answer_icon">A</div>
+        <p class="answer_text">{{ content.answer }}</p>
+      </div>
+      <div class="img-container" v-if="!content.isBottom">
+        <img src="@/assets/img/Home/footprints_three.png" />
       </div>
     </div>
-  </section>
+    <div class="spacer"></div>
+    <!-- TODO: 入会フォームのURL設定 -->
+    <Button message="入会はこちら！" url="/" :hiyoko_icon="true" />
+  </sectionLayout>
 </template>
 
 <script>
-export default {}
+import SectionLayout from './SectionLayout.vue'
+import Button from '../common/Button.vue'
+export default {
+  components: {
+    SectionLayout,
+    Button
+  },
+  data() {
+    return {
+      contents: [
+        {
+          question: 'メンバーは何人くらいですか？',
+          answer:
+            '約30名ほどで活動中で、男女ともに参加しやすい雰囲気です。お一人で飛び込むのが不安という方は、ご友人と一緒に参加されるのもよいと思います。'
+        },
+        {
+          question: '参加するにあたり、何か必要なものはありますか？',
+          answer:
+            '特にありません。活動に使用するツール（Discord・Notion等）がPCやスマートフォンから利用できれば大丈夫です。'
+        },
+        {
+          question: '入ったらまずどんなことをするのでしょうか。',
+          answer:
+            'スムーズに参加してもらうための各種説明会に加え、ツールの使い方や環境構築などのセットアップもサポートさせていただきます。その後は定例会やオフラインイベントにご自由にご参加ください。'
+        },
+        {
+          question: '仕事が忙しくなった場合、活動に参加できるか不安です。',
+          answer:
+            '活動はすべて任意参加なので、ご自身のスケジュール優先で大丈夫です。内容はアーカイブに残るので、後から確認することもできます。'
+        },
+        {
+          question: '地方配属や転職で環境が変わっても参加できますか？',
+          answer:
+            'オンライン中心の活動なので問題ありません。地方から参加されたり、転職後も引き続き在籍しているメンバーも多いです。'
+        },
+        {
+          question: '上記の活動以外のこともしてみたいのですが、できるのでしょうか。',
+          answer:
+            'やってみたいことの提案は大歓迎です。ここに載せきれていない活動も多くありますし、アイデアは常に募集中です。',
+          isBottom: true
+        }
+      ]
+    }
+  }
+}
 </script>
 <style scoped>
-section {
-  height: 500px;
-  position: relative;
+.content {
+  max-width: 800px;
+  margin: 0 auto;
 }
-
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
-.contents {
-  padding: 20px;
-  margin: 100px;
-  font-family: 'Yomogi';
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
-  font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
 .question {
-  font-weight: bold;
-  font-size: 20px;
+  display: flex;
+  padding: 15px;
+  text-align: left;
+}
+
+.question_icon {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background: rgb(160, 160, 160);
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgb(195, 195, 195);
+}
+
+.question_text {
+  margin: 0;
+  width: calc(100% - 32px);
+  padding-left: 15px;
+  line-height: 32px;
 }
 
 .answer {
-  margin-bottom: 50px;
-  border-bottom: 1px solid black;
-  padding-bottom: 30px;
-  font-size: 18px;
+  display: flex;
+  padding: 15px;
+  text-align: left;
+}
+
+.answer_icon {
+  display: block;
+  text-align: center;
+  color: rgb(100, 100, 100);
+  background: rgb(251, 234, 146);
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px rgb(195, 195, 195);
+}
+
+.answer_text {
+  margin: 0;
+  width: calc(100% - 32px);
+  padding-left: 15px;
+  line-height: 32px;
+}
+
+.img-container {
+  margin: 50px auto;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+}
+
+.spacer {
+  height: 30px;
+}
+@media screen and (max-width: 834px) {
+  .content {
+    max-width: 600px;
+  }
+  .question {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+  }
+  .answer {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+  }
+  .img-container {
+    margin: 20px auto;
+    text-align: center;
+  }
+  img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .question {
+    display: flex;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .question_icon {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+  }
+
+  .question_text {
+    padding-left: 10px;
+    line-height: 26px;
+  }
+  .answer {
+    display: flex;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .answer_icon {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+  }
+
+  .answer_text {
+    padding-left: 10px;
+    line-height: 26px;
+  }
+  .img-container {
+    margin: 10px auto;
+    text-align: center;
+  }
+  img {
+    width: 80px;
+  }
+
+  .spacer {
+    display: none;
+  }
 }
 </style>
