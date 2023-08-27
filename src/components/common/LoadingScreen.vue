@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div v-if="isLoading" class="loading-screen">
-      <img src="@/assets/img/Common/logo.png" class="logo" />
+      <img src="@/assets/img/Common/logo.webp" class="logo" />
     </div>
   </transition>
 </template>
