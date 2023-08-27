@@ -2,40 +2,40 @@
   <!-- TODO: リファクタ -->
   <ul class="scroll_list_to_left" v-if="!reverse && !half">
     <!-- 通常 -->
-    <img class="slide" src="@/assets/img/Members/up/sugawara.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kawai.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/koyama.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/tauchi.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kobayashi.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kinomoto.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/tanaka.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/honda.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/nomura.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/sasaki.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kamiya.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/takasu.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kunibe.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/saijo.png" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/sugawara.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kawai.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/koyama.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/tauchi.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kobayashi.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kinomoto.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/tanaka.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/honda.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/nomura.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/sasaki.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kamiya.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/takasu.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kunibe.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/saijo.webp" alt="" />
   </ul>
   <ul class="scroll_list_to_left" v-if="!reverse && half == 'left'">
     <!-- ハーフ：左 -->
-    <img class="slide" src="@/assets/img/Members/up/sugawara.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kawai.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/koyama.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/tauchi.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kobayashi.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kinomoto.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/tanaka.png" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/sugawara.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kawai.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/koyama.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/tauchi.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kobayashi.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kinomoto.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/tanaka.webp" alt="" />
   </ul>
   <ul class="scroll_list_to_right" v-if="reverse && half == 'right'">
     <!-- ハーフ：右 -->
-    <img class="slide" src="@/assets/img/Members/up/honda.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/nomura.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/sasaki.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kamiya.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/takasu.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/kunibe.png" alt="" />
-    <img class="slide" src="@/assets/img/Members/up/saijo.png" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/honda.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/nomura.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/sasaki.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kamiya.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/takasu.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/kunibe.webp" alt="" />
+    <img class="slide" src="@/assets/img/Members/up/saijo.webp" alt="" />
   </ul>
 </template>
 <script>

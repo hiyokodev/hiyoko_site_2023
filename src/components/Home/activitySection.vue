@@ -3,13 +3,13 @@
     <p class="description">さぁ、はじめてみよう。</p>
     <div class="contents">
       <div class="content">
-        <img src="@/assets/img//Home/activity_website.png" />
+        <img src="@/assets/img//Home/activity_website.webp" />
         <p class="content_title">Web Site</p>
         <p class="content_desc"><span>自分たちだけで</span><span>Webサイト作り！</span></p>
       </div>
       <div class="content">
         <div class="image_container">
-          <img src="@/assets/img/Home/activity_LT.png" />
+          <img src="@/assets/img/Home/activity_LT.webp" />
         </div>
         <div class="text_container">
           <p class="content_title">Lightning Talk</p>
@@ -18,7 +18,7 @@
       </div>
       <div class="content">
         <div class="image_container">
-          <img src="@/assets/img/Home/activity_events.png" />
+          <img src="@/assets/img/Home/activity_events.webp" />
         </div>
         <div class="text_container">
           <p class="content_title">Events</p>

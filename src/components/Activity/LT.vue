@@ -2,7 +2,7 @@
   <!-- PC -->
   <div class="pc_view">
     <div class="img_container">
-      <img src="@/assets/img/Activity/tmp_LT.png" class="content_img" />
+      <img src="@/assets/img/Activity/tmp_LT.webp" class="content_img" />
     </div>
     <div class="hiyoko_container">
       <img src="@/assets/img/hiyoko_ashiato02.png" class="LT_ashiato" />
@@ -11,7 +11,7 @@
   <!-- スマートフォン -->
   <div class="sp_view">
     <div class="container">
-      <img src="@/assets/img/Activity/sp_LT.png" class="content_img" />
+      <img src="@/assets/img/Activity/sp_LT.webp" class="content_img" />
       <h3>Lightning Talk</h3>
       <p>
         <span>Lightning Talk（LT）とは</span>

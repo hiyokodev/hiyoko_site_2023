@@ -2,7 +2,7 @@
   <!-- PC -->
   <div class="pc_view">
     <div class="img_container">
-      <img src="@/assets/img/Activity/tmp_website.png" class="content_img" />
+      <img src="@/assets/img/Activity/tmp_website.webp" class="content_img" />
     </div>
     <div class="hiyoko_container">
       <img src="@/assets/img/hiyoko_ashiato01.png" class="website_ashiato" />
@@ -12,7 +12,7 @@
   <!-- スマートフォン -->
   <div class="sp_view">
     <div class="container">
-      <img src="@/assets/img/Activity/sp_website.png" class="content_img" />
+      <img src="@/assets/img/Activity/sp_website.webp" class="content_img" />
       <h3>Web Site</h3>
       <p>
         <span>サイトのデザインからコーディングまで、</span>

@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="Img_Container">
-      <img class="img_pc" src="@/assets/img/Home/top_pc.png" />
-      <img class="img_sp" src="@/assets/img/Home/top_sp.png" />
+      <img class="img_pc" src="@/assets/img/Home/top_pc.webp" />
+      <img class="img_sp" src="@/assets/img/Home/top_sp.webp" />
     </div>
   </section>
 </template>

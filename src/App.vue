@@ -1,4 +1,5 @@
 <template>
+  <LoadingScreen />
   <RouterView />
   <Footer />
 </template>
@@ -7,8 +8,12 @@
 import { RouterLink, RouterView } from 'vue-router'
 import 'normalize.css'
 import Footer from './components/common/Footer.vue'
+import LoadingScreen from './components/common/LoadingScreen.vue'
 export default {
-  components: { Footer }
+  components: {
+    Footer,
+    LoadingScreen
+  }
 }
 </script>
 

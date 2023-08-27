@@ -2,7 +2,7 @@
   <!-- PC -->
   <div class="pc_view">
     <div class="img_container">
-      <img src="@/assets/img/Activity/tmp_events.png" class="content_img" />
+      <img src="@/assets/img/Activity/tmp_events.webp" class="content_img" />
     </div>
     <div class="hiyoko_container">
       <img src="@/assets/img/hiyoko_02.png" class="events_hiyoko" />
@@ -12,7 +12,7 @@
   <!-- スマートフォン -->
   <div class="sp_view">
     <div class="container">
-      <img src="@/assets/img/Activity/sp_events.png" class="content_img" />
+      <img src="@/assets/img/Activity/sp_events.webp" class="content_img" />
       <h3>Events</h3>
 
       <p>
