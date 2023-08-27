@@ -84,9 +84,12 @@ img {
   }
 }
 @media screen and (max-width: 600px) {
+  .Button {
+    font-size: 16px;
+  }
   .Button_Container {
     margin-top: 30px;
-    width: 180px;
+    width: 200px;
   }
   .Image_Container {
     position: absolute;
