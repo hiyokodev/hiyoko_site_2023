@@ -1,6 +1,5 @@
-<script setup></script>
-
 <template>
+  <Header />
   <main>
     <div class="contents">
       <h2>Member</h2>
@@ -11,43 +10,49 @@
         <Button message="入会はこちら！" url="/" />
         <p>これから仲良くする素敵な先輩たちです!</p>
 
-        <div class="photos">
-          <div><img src="@/assets/img/kamiya_hitomi1.jpg" /></div>
-          <div><img src="@/assets/img/kawai_rika1.jpg" /></div>
-          <div><img src="@/assets/img/kinomoto_yuka1.jpg" /></div>
-          <div><img src="@/assets/img/kobayashi_yosiaki1.jpg" /></div>
-          <div><img src="@/assets/img/sasaki_syun1.jpg" /></div>
-          <div><img src="@/assets/img/tauti_akane1.jpg" /></div>
-          <div><img src="@/assets/img/takasu_masayuki1.jpg" /></div>
-          <div><img src="@/assets/img/koyama_kou1.jpg" /></div>
-          <div><img src="@/assets/img/nomura_mao1.jpg" /></div>
-          <div><img src="@/assets/img/honda_mai1.jpg" /></div>
-          <div><img src="@/assets/img/sugawara_huta1.jpg" /></div>
-          <div><img src="@/assets/img/saijyo_yume1.jpg" /></div>
-          <div><img src="@/assets/img/kunibe_mayu1.jpg" /></div>
-          <div><img src="@/assets/img/tanaka_shion1.jpg" /></div>
+      <div class="photos">
+        <div v-for="member in members" :key="member">
+          <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
         </div>
 
         <img src="@assets/img/hiyoko_3_01.png" class="hiyoko03_img" />
         <p>写真に写ってないメンバーもいるよ〜</p>
       </div>
+
+      <Button message="入会はこちら！" url="#" />
     </div>
   </main>
 </template>
 
 <script>
-/*import Website from '../components/Activity/Website.vue'
-import LT from '../components/Activity/LT.vue'
-import Events from '../components/Activity/Events.vue'
-import Button from '../components/common/Button.vue'*/
+import Header from '../components/common/Header.vue'
+import Button from '../components/common/Button.vue'
 
 export default {
-  /*components: {
-    Website,
-    LT,
-    Events,
+  components: {
+    Header,
     Button
-  }*/
+  },
+  data() {
+    return {
+      members: [
+        'sugawara',
+        'koyama',
+        'tauchi',
+        'takasu',
+        'honda',
+        'kawai',
+        'kinomoto',
+        'kobayashi',
+        'sasaki',
+        'kamiya',
+        'tanaka',
+        'nomura',
+        'kunibe',
+        'saijo'
+      ]
+    }
+  }
 }
 </script>
 <style scoped>
@@ -93,28 +98,11 @@ p{
   border-radius: 35px; /* ちょっとだけ角丸 */
 }
 
-@media screen and (max-width: 959px) {
-  /* 959px以下に適用されるCSS（タブレット用） */
+@media screen and (max-width: 834px) {
+  /* 834px以下に適用されるCSS（タブレット用） */
   .photos div img {
     min-width: 30px; /*画像の最低幅を定義*/
     border-radius: 5px; /* ちょっとだけ角丸 */
   }
-}
-
-.btn {
-  .btn:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-  .btn:hover img:nth-of-type(2) {
-    opacity: 0;
-  }
-}
-.hiyoko03_img {
-  position: absolute;
-  top: 300px;
-  left: 360px;
-  width: auto;
-  height: 250px;
 }
 </style>

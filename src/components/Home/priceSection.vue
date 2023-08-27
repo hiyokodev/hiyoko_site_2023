@@ -1,70 +1,41 @@
 <template>
-  <section>
-    <div class="background"></div>
-    <div class="contents">
-      <h2>Price</h2>
-      <div class="text-box">
-        <div class="text-box-inner">
-          <p class="text-large">100円 / 月</p>
-          <p>集めたお金はひよこ開発の</p>
-          <p>維持費として使用させていただきます。</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <sectionLayout title="Price">
+    <textbox>
+      <p class="text_price">年会費：1,000円</p>
+      <p class="text_desc">集めたお金は維持費に使わせていただきます。</p>
+    </textbox>
+    <!-- TODO: 入会フォームのURL設定 -->
+    <Button message="入会はこちら！" url="/" :hiyoko_icon="true" />
+  </sectionLayout>
 </template>
 <script>
-export default {}
+import SectionLayout from './SectionLayout.vue'
+import textbox from './textbox.vue'
+import Button from '../common/Button.vue'
+import textboxVue from './textbox.vue'
+export default {
+  components: {
+    SectionLayout,
+    textbox,
+    Button
+  }
+}
 </script>
 <style scoped>
-section {
-  height: 500px;
-  position: relative;
-}
-
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
-.contents {
-  padding: -3px;
-  margin: 100px;
-}
-
-.text-box {
-  position: relative; /* ←文字の親要素に指定 */
-  background-color: rgba(230, 230, 230, 0.7);
-  max-width: 650px;
-  margin: 20px auto;
-  border-radius: 50px;
-  padding: 150px;
-  font-family: 'Yomogi';
-}
-
-.text-box-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 18px;
-}
-
-.text-large {
-  text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 10px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 60px;
+.text_price {
+  margin: 0;
   font-family: 'Mamelon';
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  font-size: 40px;
+}
+.text_desc {
+  margin: 20px 0 0 0;
+}
+@media screen and (max-width: 834px) {
+  .text_price {
+    font-size: 30px;
+  }
+  .text_desc {
+    margin: 10px 0 0 0;
+  }
 }
 </style>
