@@ -1,4 +1,5 @@
 <template>
+  <Header backgroundColor="#ffffe5" />
   <main>
     <!-- <BackgroundEggs /> -->
 
@@ -12,6 +13,7 @@
   </main>
 </template>
 <script>
+import Header from '../components/common/Header.vue'
 import topImageSection from '../components/Home/topImageSection.vue'
 import aboutSection from '../components/Home/aboutSection.vue'
 import memberSection from '../components/Home/memberSection.vue'
@@ -22,6 +24,7 @@ import questionSection from '../components/Home/questionSection.vue'
 import BackgroundEggs from '../components/common/BackgroundEggs.vue'
 export default {
   components: {
+    Header,
     topImageSection,
     aboutSection,
     memberSection,
