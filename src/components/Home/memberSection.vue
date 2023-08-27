@@ -1,4 +1,5 @@
 <template>
+  <!-- <sectionLayout title="Member" style="padding: 0"> -->
   <sectionLayout title="Member">
     <p class="description">
       <span>約30名ほどで活動中で、</span>
