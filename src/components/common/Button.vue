@@ -85,7 +85,7 @@ img {
 }
 @media screen and (max-width: 600px) {
   .Button {
-    font-size: 16px;
+    font-size: 15px;
   }
   .Button_Container {
     margin-top: 30px;
