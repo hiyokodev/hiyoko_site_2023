@@ -7,8 +7,9 @@
       <p>これから仲良くする素敵な先輩たちです!</p>
 
       <div class="photos">
-        <div v-for="member in members" :key="member">
-          <img class="slide" :src="`../assets/img/Members/up/${member}.webp`" alt="" />
+        <div v-for="img in imgList" :key="img">
+          <img class="slide" :src="img" alt="" />
+          <!-- <img class="slide" :src="`../assets/img/Members/up/${member}.webp`" alt="" /> -->
         </div>
         <!-- <img
           v-for="imageSrc in imageList"
@@ -27,7 +28,7 @@
 <script>
 import Header from '../components/common/Header.vue'
 import Button from '../components/common/Button.vue'
-
+import sugawara from '@/assets/img/Members/up/sugawara.webp'
 export default {
   components: {
     Header,
@@ -40,6 +41,7 @@ export default {
       //   require('@/assets/img/Members/up/sugawara.webp'),
       //   require('@/assets/img/fuga.png')
       // ]
+      imgList: [sugawara],
       members: [
         'sugawara',
         'koyama',
@@ -58,7 +60,13 @@ export default {
       ]
     }
   },
-  methods: {}
+  methods: {
+    generateImgPath: (name) => {
+      url = new URL(`@/assets/img/Members/up/${name}.webp`, import.meta.url).href
+      console.log(url)
+      return url
+    }
+  }
 }
 </script>
 <style scoped>
