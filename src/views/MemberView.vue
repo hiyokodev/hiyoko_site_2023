@@ -3,19 +3,14 @@
   <main>
     <div class="contents">
       <h2>Member</h2>
-      <div class="btn">
-        <Website />
-        <LT />
-        <Events />
-        <Button message="入会はこちら！" url="/" />
-        <p>これから仲良くする素敵な先輩たちです!</p>
+
+      <p>これから仲良くする素敵な先輩たちです!</p>
 
       <div class="photos">
         <div v-for="member in members" :key="member">
           <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
         </div>
 
-        <img src="@assets/img/hiyoko_3_01.png" class="hiyoko03_img" />
         <p>写真に写ってないメンバーもいるよ〜</p>
       </div>
 
@@ -72,7 +67,7 @@ h2 {
   text-shadow: 1px 2px 3px #808080;
 }
 
-p{
+p {
   font-family: 'Yomogi';
   font-size: 30px;
 }
