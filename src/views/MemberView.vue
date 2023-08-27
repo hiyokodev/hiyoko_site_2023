@@ -9,9 +9,7 @@
         <LT />
         <Events />
         <Button message="入会はこちら！" url="/" />
-
-        <img src="@/assets/img/hiyoko_01.png" class="hiyoko_img" />
-        <p class="balloon1">これから仲良くする素敵な先輩たちです!</p>
+        <p>これから仲良くする素敵な先輩たちです!</p>
 
         <div class="photos">
           <div><img src="@/assets/img/kamiya_hitomi1.jpg" /></div>
@@ -29,6 +27,9 @@
           <div><img src="@/assets/img/kunibe_mayu1.jpg" /></div>
           <div><img src="@/assets/img/tanaka_shion1.jpg" /></div>
         </div>
+
+        <img src="@assets/img/hiyoko_3_01.png" class="hiyoko03_img" />
+        <p>写真に写ってないメンバーもいるよ〜</p>
       </div>
     </div>
   </main>
@@ -66,41 +67,13 @@ h2 {
   text-shadow: 1px 2px 3px #808080;
 }
 
-.hiyoko_img {
-  position: absolute;
-  top: 300px;
-  left: 360px;
-  width: auto;
-  height: 250px;
-}
-.balloon1 {
-  position: relative;
-  left:100px;
-  display: inline-block;
-  padding: 0 15px;
-  width: 550px;
-  height: 200px;
-  line-height: 200px; /*文字が真ん中に来るように調整*/
-  border-radius: 50%;
-  background-color: #f9dc5c;
-  text-align: center;
-  color: #000;
-  font-size: 20px;
+p{
   font-family: 'Yomogi';
+  font-size: 30px;
 }
-.balloon1::before {
-  content: '';
-  position: absolute;
-  border: 15px solid transparent;
-  border-right: 25px solid #f9dc5c;
-  left: -30px;
-  top: 50%;
-  margin-top: -15px;
-}
-
 .photos {
   top: 400px;
-  margin:50px;
+  margin: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -116,7 +89,7 @@ h2 {
   min-width: 130px; /*画像の最低幅を定義*/
   height: auto; /*画像の縦横比を維持*/
   flex-wrap: wrap;
-  margin: 20px 0px;
+  margin: 10px 0px;
   border-radius: 35px; /* ちょっとだけ角丸 */
 }
 
@@ -136,5 +109,12 @@ h2 {
   .btn:hover img:nth-of-type(2) {
     opacity: 0;
   }
+}
+.hiyoko03_img {
+  position: absolute;
+  top: 300px;
+  left: 360px;
+  width: auto;
+  height: 250px;
 }
 </style>
