@@ -2,6 +2,11 @@
   <Header />
   <main>
     <h2 class="top">Activity</h2>
+    <p class="description">
+      <!-- TODO: 文言修正 -->
+      ひよこ開発で実施中の主な活動です。<br />
+      （仮）今後はもっと増える、やりたいことを始めてみよう的な!
+    </p>
     <div class="contents">
       <Website />
       <LT />
@@ -36,6 +41,11 @@ main {
   font-size: 60px;
   font-family: 'Mamelon';
   text-shadow: 1px 2px 3px #808080;
+}
+.description {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Yomogi';
 }
 
 .contents {

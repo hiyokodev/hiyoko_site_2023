@@ -3,7 +3,7 @@
   <main>
     <div class="contents">
       <h2 class="top">Member</h2>
-      <p class="description">これから仲良くする素敵な先輩たちです!</p>
+      <p class="description"><span>所属部署や仕事も様々な、</span><span>個性豊かな仲間たちです。</span></p>
       <div class="photos">
         <div class="member" v-for="member in members" :key="member.name">
           <div class="image_wrapper">
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <p class="description">写真に写ってないメンバーもいるよ〜</p>
+      <p class="description"><span>ここでは紹介しきれなかった</span><span>素敵な仲間が他にもいます！</span></p>
 
       <Button message="入会はこちら！" url="https://forms.gle/jB3XFHcYaj2oLnwy5" />
     </div>
@@ -234,6 +234,10 @@ export default {
 <style scoped>
 main {
   padding: 20px;
+}
+
+span {
+  display: inline-block;
 }
 .contents {
   text-align: center;

@@ -4,20 +4,21 @@
       <p class="text">
         <span>ひよこ開発は、メンバー同士の交流や情報交換、</span>
         <span>勉強のきっかけづくりを目的とした</span>
-        <span>有志による若手のみのコミュニティです。</span>
+        <span>有志による若手コミュニティです。</span>
       </p>
       <br />
       <br />
       <p class="text_shadow">
         部署をこえて若手の先輩後輩と繋がりたい<br /><br />
-        <span>１人だと続かないので、</span><span>勉強のモチベーションを上げたい</span><br /><br />
-        <span>プログラミングを学んでみたいけど、</span><span>何をすればいいかわからない</span>
+        <span>資格勉強を一緒に頑張る仲間が欲しい</span><br /><br />
+        <span>プログラミングを学んでみたいけど、</span><span>始め方がわからない</span>
       </p>
       <br />
       <br />
-      <p class="text">そんな思いを抱えた仲間が集まっています。</p>
+      <p class="text">
+        <span>ひよこ開発は、</span><span>そんなあなたのためのコミュニティです。</span>
+      </p>
     </textbox>
-    <!-- TODO: 入会フォームのURL設定 -->
     <Button
       message="入会はこちら！"
       url="https://forms.gle/jB3XFHcYaj2oLnwy5"

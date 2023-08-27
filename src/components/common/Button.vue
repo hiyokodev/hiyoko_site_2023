@@ -14,7 +14,6 @@
   </div>
 </template>
 
-<!-- FIXME: ページ遷移先のスクロール位置が正しくない可能性 -->
 <script>
 export default {
   props: {

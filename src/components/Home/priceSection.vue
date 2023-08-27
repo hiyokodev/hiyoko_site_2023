@@ -4,7 +4,6 @@
       <p class="text_price">年会費：1,000円</p>
       <p class="text_desc">集めたお金は維持費に使わせていただきます。</p>
     </textbox>
-    <!-- TODO: 入会フォームのURL設定 -->
     <Button
       message="入会はこちら！"
       url="https://forms.gle/jB3XFHcYaj2oLnwy5"
