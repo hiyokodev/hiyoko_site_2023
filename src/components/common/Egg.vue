@@ -2,7 +2,7 @@
   <img
     src="@/assets/img/Common/background_egg.png"
     class="egg"
-    :style="{ top: top + 'px', left: initialLeft + '%' }"
+    :style="{ top: top + 'px', left: initialLeft + '%', width: width + 'px' }"
     alt="Egg"
   />
 </template>
@@ -17,6 +17,10 @@ export default {
     initialLeft: {
       type: Number,
       default: 0
+    },
+    width: {
+      type: Number,
+      default: 300
     }
   },
   data() {
@@ -41,7 +45,6 @@ export default {
 <style scoped>
 .egg {
   position: absolute;
-  width: 300px;
   z-index: -10;
   bottom: 0;
 }
