@@ -3,22 +3,37 @@
   <main>
     <div class="contents">
       <h2>Member</h2>
-
-      <p>これから仲良くする素敵な先輩たちです!</p>
-
+      <p class="description">これから仲良くする素敵な先輩たちです!</p>
       <div class="photos">
-        <div v-for="img in imgList" :key="img">
-          <img class="slide" :src="img" alt="" />
-          <!-- <img class="slide" :src="`../assets/img/Members/up/${member}.webp`" alt="" /> -->
+        <!-- <Member :imageSrc="member.photo" /> -->
+        <div class="member" v-for="member in members" :key="member.name">
+          <div class="image_wrapper">
+            <img class="photo" :src="member.photo" alt="" />
+            <div class="overlay">
+              <div class="overlay_background"></div>
+              <div class="overlay_text">
+                <div class="overlay_text_title">
+                  <p>ひよこ開発で<br />身についたこと</p>
+                </div>
+                <div class="overlay_text_content">
+                  <p><pre>{{ member.learned }}</pre></p>
+                </div>
+                <div class="overlay_text_title">
+                  <p>自分を表す言葉</p>
+                </div>
+                <div class="overlay_text_content">
+                  <p v-for="word in member.words" :key="word">#{{ word }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text_wrapper">
+            <p class="kana">{{ member.kana }}</p>
+            <p class="name">{{ member.name }}</p>
+          </div>
         </div>
-        <!-- <img
-          v-for="imageSrc in imageList"
-          :key="imageSrc"
-          :src="imageList[imageSrc]"
-          alt="Dynamic Image"
-        /> -->
-        <p>写真に写ってないメンバーもいるよ〜</p>
       </div>
+      <p class="description">写真に写ってないメンバーもいるよ〜</p>
 
       <Button message="入会はこちら！" url="#" />
     </div>
@@ -28,35 +43,152 @@
 <script>
 import Header from '../components/common/Header.vue'
 import Button from '../components/common/Button.vue'
-import sugawara from '@/assets/img/Members/up/sugawara.webp'
+import sugawara_photo from '@/assets/img/Members/up/sugawara.webp'
+import koyama_photo from '@/assets/img/Members/up/koyama.webp'
+import tauchi_photo from '@/assets/img/Members/up/tauchi.webp'
+import takasu_photo from '@/assets/img/Members/up/takasu.webp'
+import honda_photo from '@/assets/img/Members/up/honda.webp'
+import kawai_photo from '@/assets/img/Members/up/kawai.webp'
+import kinomoto_photo from '@/assets/img/Members/up/kinomoto.webp'
+import kobayashi_photo from '@/assets/img/Members/up/kobayashi.webp'
+import sasaki_photo from '@/assets/img/Members/up/sasaki.webp'
+import kamiya_photo from '@/assets/img/Members/up/kamiya.webp'
+import tanaka_photo from '@/assets/img/Members/up/tanaka.webp'
+import nomura_photo from '@/assets/img/Members/up/nomura.webp'
+import kunibe_photo from '@/assets/img/Members/up/kunibe.webp'
+import saijo_photo from '@/assets/img/Members/up/saijo.webp'
 export default {
   components: {
     Header,
-    Button
+    Button,
   },
   data() {
     return {
-      // imageList: import.meta.glob('@/assets/img/Members/up/*.webp')
-      // imageList: [
-      //   require('@/assets/img/Members/up/sugawara.webp'),
-      //   require('@/assets/img/fuga.png')
-      // ]
-      imgList: [sugawara],
       members: [
-        'sugawara',
-        'koyama',
-        'tauchi',
-        'takasu',
-        'honda',
-        'kawai',
-        'kinomoto',
-        'kobayashi',
-        'sasaki',
-        'kamiya',
-        'tanaka',
-        'nomura',
-        'kunibe',
-        'saijo'
+        {
+          name: '菅原 風太',
+          kana: 'Sugawara Futa',
+          photo: sugawara_photo,
+          learned: 'ひよこ開発オーナー',
+          words: [
+            '自分の人生を生きる',
+            'ボードゲーマー',
+            'Apple信者',
+            '仕切りたがり',
+            'プレゼン好き雑談苦手'
+          ]
+        },
+        {
+          name: '小山 航',
+          kana: 'Koyama Wataru',
+          photo: koyama_photo,
+          learned: '友達が沢山できた',
+          words: [
+            'ENFP',
+            '어덕행덕',
+            '趣味は飽きること',
+            'ラーメン好きと繋がりたい',
+            '凍え死んでもアイスコーヒー'
+          ]
+        },
+        {
+          name: '田内 紅音',
+          kana: 'Tauchi Akane',
+          photo: tauchi_photo,
+          learned: 'プログラミングへの\nハードルが下がった',
+          words: ['雑食', '猫派', 'なんでも楽しむ', '知らんけど']
+        },
+        {
+          name: '小山 航',
+          kana: 'Koyama Wataru',
+          photo: koyama_photo,
+          learned: '友達が沢山できた',
+          words: [
+            'ENFP',
+            '어덕행덕',
+            '趣味は飽きること',
+            'ラーメン好きと繋がりたい',
+            '凍え死んでもアイスコーヒー'
+          ]
+        },
+        {
+          name: '小山 航',
+          kana: 'Koyama Wataru',
+          photo: koyama_photo,
+          learned: '友達が沢山できた',
+          words: [
+            'ENFP',
+            '어덕행덕',
+            '趣味は飽きること',
+            'ラーメン好きと繋がりたい',
+            '凍え死んでもアイスコーヒー'
+          ]
+        },
+        {
+          name: '小山 航',
+          kana: 'Koyama Wataru',
+          photo: koyama_photo,
+          learned: '友達が沢山できた',
+          words: [
+            'ENFP',
+            '어덕행덕',
+            '趣味は飽きること',
+            'ラーメン好きと繋がりたい',
+            '凍え死んでもアイスコーヒー'
+          ]
+        },
+        {
+          name: '小山 航',
+          kana: 'Koyama Wataru',
+          photo: koyama_photo,
+          learned: '友達が沢山できた',
+          words: [
+            'ENFP',
+            '어덕행덕',
+            '趣味は飽きること',
+            'ラーメン好きと繋がりたい',
+            '凍え死んでもアイスコーヒー'
+          ]
+        },
+        {
+          name: '小山 航',
+          kana: 'Koyama Wataru',
+          photo: koyama_photo,
+          learned: '友達が沢山できた',
+          words: [
+            'ENFP',
+            '어덕행덕',
+            '趣味は飽きること',
+            'ラーメン好きと繋がりたい',
+            '凍え死んでもアイスコーヒー'
+          ]
+        },
+        {
+          name: '小山 航',
+          kana: 'Koyama Wataru',
+          photo: koyama_photo,
+          learned: '友達が沢山できた',
+          words: [
+            'ENFP',
+            '어덕행덕',
+            '趣味は飽きること',
+            'ラーメン好きと繋がりたい',
+            '凍え死んでもアイスコーヒー'
+          ]
+        },
+        {
+          name: '小山 航',
+          kana: 'Koyama Wataru',
+          photo: koyama_photo,
+          learned: '友達が沢山できた',
+          words: [
+            'ENFP',
+            '어덕행덕',
+            '趣味は飽きること',
+            'ラーメン好きと繋がりたい',
+            '凍え死んでもアイスコーヒー'
+          ]
+        }
       ]
     }
   },
@@ -77,39 +209,109 @@ main {
   text-align: center;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 20px;
 }
 
 h2 {
+  margin: 40px;
   font-family: 'Mamelon';
   font-size: 60px;
   text-shadow: 1px 2px 3px #808080;
 }
-
+.description {
+  font-size: 18px;
+}
 p {
+  margin: 0;
   font-family: 'Yomogi';
-  font-size: 30px;
 }
 .photos {
-  top: 400px;
-  margin: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
 }
-.photos div {
-  width: calc(100% / 4); /*画像を横に5つ並べる場合*/
-  padding: 0px 20px; /*画像の左右上下に余白を入れる場合*/
-  box-sizing: border-box;
-  list-style: none; /*リストの黒い●を無くす*/
+
+.member {
+  margin: 30px 0;
 }
-.photos div img {
-  max-width: 100%; /*画像のはみだしを防ぐ*/
-  min-width: 130px; /*画像の最低幅を定義*/
-  height: auto; /*画像の縦横比を維持*/
-  flex-wrap: wrap;
-  margin: 10px 0px;
-  border-radius: 35px; /* ちょっとだけ角丸 */
+
+.image_wrapper {
+  position: relative;
+  margin: 10px;
+  width: 240px;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay_background {
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s;
+}
+
+.image_wrapper:hover .overlay_background {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s;
+}
+.image_wrapper:hover .overlay_text {
+  opacity: 1;
+}
+
+.overlay_text_title {
+  margin: 30px auto 10px auto;
+  width: auto;
+  text-align: center;
+  font-size: 22px;
+}
+.overlay_text_title p {
+  font-family: 'Mamelon';
+}
+
+.overlay_text_content {
+  margin: 0 auto;
+  width: auto;
+  text-align: left;
+  font-size: 16px;
+}
+pre {
+  margin: 0;
+  font-family: 'Yomogi';
+}
+
+.kana {
+  margin: 0;
+  font-size: 16px;
+}
+
+.name {
+  margin: 5px 0 0 0;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 834px) {
