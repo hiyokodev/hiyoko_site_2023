@@ -51,7 +51,7 @@
       </div>
       <p class="description">写真に写ってないメンバーもいるよ〜</p>
 
-      <Button message="入会はこちら！" url="#" />
+      <Button message="入会はこちら！" url="https://forms.gle/jB3XFHcYaj2oLnwy5" />
     </div>
   </main>
 </template>

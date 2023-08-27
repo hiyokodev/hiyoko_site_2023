@@ -18,7 +18,11 @@
       <p class="text">そんな思いを抱えた仲間が集まっています。</p>
     </textbox>
     <!-- TODO: 入会フォームのURL設定 -->
-    <Button message="入会はこちら！" url="/" :hiyoko_icon="true" />
+    <Button
+      message="入会はこちら！"
+      url="https://forms.gle/jB3XFHcYaj2oLnwy5"
+      :hiyoko_icon="true"
+    />
   </sectionLayout>
 </template>
 

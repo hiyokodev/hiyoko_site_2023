@@ -1,8 +1,13 @@
 <template>
   <div class="Button_Container">
-    <router-link class="Button" :to="url">
+    <!-- サイト内 -->
+    <router-link class="Button" :to="url" v-if="!url.includes('https')">
       {{ message }}
     </router-link>
+    <!-- 外部 -->
+    <a class="Button" :href="url" v-if="url.includes('https')" target="_blank">
+      {{ message }}
+    </a>
     <div class="Image_Container" v-if="hiyoko_icon">
       <img src="@/assets/img/Common/hiyoko_right.png" />
     </div>

@@ -6,7 +6,7 @@
       <Website />
       <LT />
       <Events />
-      <Button message="入会はこちら！" url="#" />
+      <Button message="入会はこちら！" url="https://forms.gle/jB3XFHcYaj2oLnwy5" />
     </div>
   </main>
 </template>
