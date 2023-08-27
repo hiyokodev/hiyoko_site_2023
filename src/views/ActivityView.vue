@@ -32,10 +32,10 @@ main {
   padding: 20px;
 }
 .top {
-  text-shadow: 1px 2px 3px #808080;
   text-align: center;
-  font-family: 'Mamelon';
   font-size: 60px;
+  font-family: 'Mamelon';
+  text-shadow: 1px 2px 3px #808080;
 }
 
 .contents {
