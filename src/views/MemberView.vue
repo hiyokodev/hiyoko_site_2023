@@ -350,7 +350,7 @@ pre {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 834px) {
 main {
   padding: 5px;
 }
