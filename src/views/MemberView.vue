@@ -8,9 +8,14 @@
 
       <div class="photos">
         <div v-for="member in members" :key="member">
-          <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
+          <img class="slide" :src="`../assets/img/Members/up/${member}.webp`" alt="" />
         </div>
-
+        <!-- <img
+          v-for="imageSrc in imageList"
+          :key="imageSrc"
+          :src="imageList[imageSrc]"
+          alt="Dynamic Image"
+        /> -->
         <p>写真に写ってないメンバーもいるよ〜</p>
       </div>
 
@@ -30,6 +35,11 @@ export default {
   },
   data() {
     return {
+      // imageList: import.meta.glob('@/assets/img/Members/up/*.webp')
+      // imageList: [
+      //   require('@/assets/img/Members/up/sugawara.webp'),
+      //   require('@/assets/img/fuga.png')
+      // ]
       members: [
         'sugawara',
         'koyama',
@@ -47,7 +57,8 @@ export default {
         'saijo'
       ]
     }
-  }
+  },
+  methods: {}
 }
 </script>
 <style scoped>
