@@ -1,15 +1,20 @@
 <template>
-  <Header />
   <RouterView />
+  <Footer />
 </template>
 
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import 'normalize.css'
-import Header from './components/common/Header.vue'
+import Footer from './components/common/Footer.vue'
 export default {
-  components: { Header }
+  components: { Footer }
 }
 </script>
 
-<style scoped></style>
+<style>
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+</style>
