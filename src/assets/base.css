@@ -68,14 +68,14 @@ body {
 
 @font-face {
   font-family: 'Mamelon';
-  src: url('~@/assets/fonts/Mamelon-5-Hi-Regular.otf') format('otf');
+  src: url('@/assets/fonts/Mamelon-5-Hi-Regular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Yomogi';
-  src: url('~@/assets/fonts/Yomogi-Regular.ttf') format('ttf');
+  src: url('@/assets/fonts/Yomogi-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
