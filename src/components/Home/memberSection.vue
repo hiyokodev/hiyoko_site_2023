@@ -1,48 +1,24 @@
 <template>
+  <!-- <sectionLayout title="Member" style="padding: 0"> -->
   <sectionLayout title="Member">
     <p class="description">
-      <span>約30名ほどで活動中で、</span>
-      <span>男女ともに参加しやすい雰囲気です。</span>
+      <span>所属部署や仕事も様々な、個性豊かな仲間たちです。</span>
     </p>
     <div class="scroll_pc_container">
       <div class="scroll_pc">
-        <!-- FIXME: 見切れ防止のために同じリストを2つ並べている。よりよい方法があれば修正する -->
-        <ul class="scroll_list_to_left">
-          <li v-for="member in members" :key="member">
-            <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
-          </li>
-        </ul>
-        <ul class="scroll_list_to_left">
-          <li v-for="member in members" :key="member">
-            <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
-          </li>
-        </ul>
+        <!-- TODO: 見切れ防止のために同じリストを2つ並べている。よりよい方法があれば修正する -->
+        <MembersScroll />
+        <MembersScroll />
       </div>
     </div>
     <div class="scroll_sp_container">
       <div class="scroll_sp">
-        <ul class="scroll_list_to_left">
-          <li v-for="member in left_members" :key="member">
-            <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
-          </li>
-        </ul>
-        <ul class="scroll_list_to_left">
-          <li v-for="member in left_members" :key="member">
-            <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
-          </li>
-        </ul>
+        <MembersScroll half="left" />
+        <MembersScroll half="left" />
       </div>
       <div class="scroll_sp">
-        <ul class="scroll_list_to_right">
-          <li v-for="member in right_members" :key="member">
-            <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
-          </li>
-        </ul>
-        <ul class="scroll_list_to_right">
-          <li v-for="member in right_members" :key="member">
-            <img class="slide" :src="`src/assets/img/Members/up/${member}.png`" alt="" />
-          </li>
-        </ul>
+        <MembersScroll half="right" :reverse="true" />
+        <MembersScroll half="right" :reverse="true" />
       </div>
     </div>
     <Button message="メンバーページ" url="/member" />
@@ -50,31 +26,13 @@
 </template>
 <script>
 import SectionLayout from './SectionLayout.vue'
+import MembersScroll from './MembersScroll.vue'
 import Button from '../common/Button.vue'
 export default {
   components: {
     SectionLayout,
+    MembersScroll,
     Button
-  },
-  data() {
-    return {
-      members: [
-        'sugawara',
-        'kawai',
-        'koyama',
-        'tauchi',
-        'kobayashi',
-        'kinomoto',
-        'tanaka',
-        'honda',
-        'nomura',
-        'sasaki',
-        'kamiya',
-        'takasu',
-        'kunibe',
-        'saijo'
-      ]
-    }
   },
   computed: {
     left_members() {
@@ -95,22 +53,6 @@ span {
   display: inline-block;
 }
 
-@keyframes loop_to_left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-@keyframes loop_to_right {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 .scroll_pc {
   margin-left: -20px;
   margin-right: -20px;
@@ -167,10 +109,6 @@ li {
   .description {
     margin: 0 0 30px 0;
   }
-  .slide {
-    margin: 0 10px;
-    width: 200px;
-  }
 }
 @media screen and (max-width: 600px) {
   .description {
@@ -181,11 +119,6 @@ li {
   }
   .scroll_sp_container {
     display: block;
-  }
-  .slide {
-    margin: 0 2px;
-    width: 120px;
-    border-radius: 10px;
   }
 }
 </style>

@@ -15,7 +15,7 @@ export default {
   props: {
     backgroundColor: {
       type: String,
-      default: 'white'
+      default: 'transparent'
     }
   },
   data: () => {

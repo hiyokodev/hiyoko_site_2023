@@ -1,5 +1,5 @@
 <template>
-  <!-- <BackgroundEggs /> -->
+  <LoadingScreen />
   <RouterView />
   <Footer />
 </template>
@@ -7,11 +7,20 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
 import 'normalize.css'
-import BackgroundEggs from './components/common/BackgroundEggs.vue'
 import Footer from './components/common/Footer.vue'
+import LoadingScreen from './components/common/LoadingScreen.vue'
 export default {
-  components: { BackgroundEggs, Footer }
+  components: {
+    Footer,
+    LoadingScreen
+  }
 }
 </script>
 
-<style scoped></style>
+<style>
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+</style>

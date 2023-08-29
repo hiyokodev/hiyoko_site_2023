@@ -1,14 +1,15 @@
 <template>
-  <div class="container">
-    <Egg :initialTop="0" :initialLeft="0" />
-    <Egg :initialTop="500" :initialLeft="70" />
-    <Egg :initialTop="1000" :initialLeft="10" />
-    <Egg :initialTop="1500" :initialLeft="90" />
-    <Egg :initialTop="2000" :initialLeft="30" />
-    <Egg :initialTop="2500" :initialLeft="80" />
-    <Egg :initialTop="3000" :initialLeft="20" />
-
-    <!-- 他のコンテンツ -->
+  <!-- PC -->
+  <div class="pc" v-for="egg in eggsInfo.pc" :key="egg">
+    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="300" />
+  </div>
+  <!-- タブレット -->
+  <div class="tb" v-for="egg in eggsInfo.tb" :key="egg">
+    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="250" />
+  </div>
+  <!-- スマートフォン -->
+  <div class="sp" v-for="egg in eggsInfo.sp" :key="egg">
+    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="200" />
   </div>
 </template>
 
@@ -16,6 +17,11 @@
 import Egg from './Egg.vue'
 
 export default {
+  props: {
+    eggsInfo: {
+      type: Object
+    }
+  },
   components: {
     Egg
   }
@@ -23,7 +29,29 @@ export default {
 </script>
 
 <style>
-.container {
-  position: relative;
+.tb {
+  display: none;
+}
+.sp {
+  display: none;
+}
+@media only screen and (max-width: 834px) {
+  .pc {
+    display: none;
+  }
+  .tb {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pc {
+    display: none;
+  }
+  .tb {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
 }
 </style>

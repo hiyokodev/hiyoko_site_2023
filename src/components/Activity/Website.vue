@@ -2,7 +2,7 @@
   <!-- PC -->
   <div class="pc_view">
     <div class="img_container">
-      <img src="@/assets/img/Activity/tmp_website.png" class="content_img" />
+      <img src="@/assets/img/Activity/tmp_website.webp" class="content_img" />
     </div>
     <div class="hiyoko_container">
       <img src="@/assets/img/hiyoko_ashiato01.png" class="website_ashiato" />
@@ -12,22 +12,23 @@
   <!-- スマートフォン -->
   <div class="sp_view">
     <div class="container">
-      <img src="@/assets/img/Activity/sp_website.png" class="content_img" />
+      <img src="@/assets/img/Activity/sp_website.webp" class="content_img" />
       <h3>Web Site</h3>
       <p>
         <span>サイトのデザインからコーディングまで、</span>
-        <span>すべて自分たちだけで制作します。</span>
+        <span>すべて自分たちで制作します。</span>
       </p>
       <p>
-        <span> チームで活動するので、</span>
-        <span>技術や知識がなくても気軽に始められます。</span>
+        <span>オンラインで相談しながらコードを書いたり、</span>
+        <span>Webサイトに載せる写真を</span>
+        <span>みんなで撮影に行ったり、</span>
+        <span>ワイワイ楽しく活動しています。</span>
       </p>
       <p>
-        <span> コーディングや写真撮影など、</span>
-        <span>オフラインで集まって</span>
-        <span>ワイワイと作業することも多いです！</span>
+        <span>技術や知識がなくても大丈夫。</span>
+        <span>新しいスキルと新しい自分を、</span>
+        <span>一緒に手に入れましょう！</span>
       </p>
-      <p><span>私たちと一緒に新しいスキルと</span> <span>自分を手に入れましょう！</span></p>
     </div>
   </div>
 </template>
@@ -84,12 +85,12 @@
     overflow: hidden;
   }
   h3 {
-    margin: 10px 25px;
+    margin: 10px 20px;
     font-size: 30px;
     font-family: 'Mamelon';
   }
   p {
-    margin: 10px 25px;
+    margin: 10px 20px;
     font-size: 14px;
     font-family: 'Yomogi';
   }

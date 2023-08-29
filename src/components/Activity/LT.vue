@@ -2,7 +2,7 @@
   <!-- PC -->
   <div class="pc_view">
     <div class="img_container">
-      <img src="@/assets/img/Activity/tmp_LT.png" class="content_img" />
+      <img src="@/assets/img/Activity/tmp_LT.webp" class="content_img" />
     </div>
     <div class="hiyoko_container">
       <img src="@/assets/img/hiyoko_ashiato02.png" class="LT_ashiato" />
@@ -11,16 +11,17 @@
   <!-- スマートフォン -->
   <div class="sp_view">
     <div class="container">
-      <img src="@/assets/img/Activity/sp_LT.png" class="content_img" />
+      <img src="@/assets/img/Activity/sp_LT.webp" class="content_img" />
       <h3>Lightning Talk</h3>
       <p>
         <span>Lightning Talk（LT）とは</span>
-        <span>テーマ自由のプレゼンのようなものです。</span>
+        <span>テーマ自由の短いプレゼンのようなものです。</span>
       </p>
       <p><span>月1回のオンライン定例会で、</span> <span>持ち回りで発表しています。</span></p>
       <p>
-        <span>たとえば最近では、ChatGPTを触ったり</span
-        ><span>デザインについて話したりしました。</span>
+        <span>勉強した技術、やってみたことなど、</span>
+        <span>興味のあるものならなんでもOK。</span>
+        <span>最近はChatGPTやデザインがテーマでした。</span>
       </p>
       <p>
         <span>みんなで楽しく勉強しながら、</span>
@@ -76,12 +77,12 @@
     overflow: hidden;
   }
   h3 {
-    margin: 10px 25px;
+    margin: 10px 20px;
     font-size: 30px;
     font-family: 'Mamelon';
   }
   p {
-    margin: 10px 25px;
+    margin: 10px 20px;
     font-size: 14px;
     font-family: 'Yomogi';
   }
