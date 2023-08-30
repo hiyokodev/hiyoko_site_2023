@@ -4,9 +4,8 @@
     <BackgroundEggs :eggsInfo="eggsInfo" />
     <h2 class="top">Activity</h2>
     <p class="description">
-      <!-- TODO: 文言修正 -->
       ひよこ開発で実施中の主な活動です。<br />
-      （仮）今後はもっと増える、やりたいことを始めてみよう的な!
+      <span>今後どんどん増えていきます。</span><span>一緒に始めましょう。</span>
     </p>
     <div class="contents">
       <Website />
@@ -38,24 +37,22 @@ export default {
       eggsInfo: {
         pc: [
           { top: 100, left: 5 },
-          { top: 400, left: 85 },
-          { top: 700, left: 25 },
-          { top: 1000, left: 70 },
-          { top: 1300, left: 10 }
+          { top: 800, left: 85 },
+          { top: 1300, left: 10 },
+          { top: 2200, left: 70 }
         ],
         tb: [
           { top: 100, left: 5 },
-          { top: 400, left: 85 },
-          { top: 600, left: 15 },
-          { top: 1000, left: 70 },
-          { top: 1300, left: 10 }
+          { top: 500, left: 85 },
+          { top: 800, left: -10 },
+          { top: 1300, left: 70 }
         ],
         sp: [
           { top: 100, left: 75 },
           { top: 300, left: 5 },
           { top: 600, left: 55 },
-          { top: 1000, left: 10 },
-          { top: 1300, left: 80 }
+          { top: 1000, left: -10 },
+          { top: 1100, left: 80 }
         ]
       }
     }
@@ -65,6 +62,9 @@ export default {
 <style scoped>
 main {
   padding: 20px;
+}
+span {
+  display: inline-block;
 }
 .top {
   text-align: center;
@@ -79,6 +79,7 @@ main {
 }
 
 .contents {
+  margin: 0 auto;
   max-width: 1500px;
 }
 

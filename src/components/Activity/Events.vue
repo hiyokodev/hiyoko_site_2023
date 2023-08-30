@@ -2,7 +2,7 @@
   <!-- PC -->
   <div class="pc_view">
     <div class="img_container">
-      <img src="@/assets/img/Activity/tmp_events.webp" class="content_img" />
+      <img src="@/assets/img/Activity/events.webp" class="content_img" />
     </div>
     <div class="hiyoko_container">
       <img src="@/assets/img/hiyoko_02.png" class="events_hiyoko" />
@@ -24,8 +24,8 @@
         <span>毎回楽しい交流企画を用意しています。</span>
       </p>
       <p>
-        <span>普段の活動には参加できないけど</span>
-        <span>イベントは行きたい！というのも大歓迎です。</span>
+        <span>仕事で活躍する先輩や仲間と</span>
+        <span>交流できる貴重なチャンス。</span>
         <span>ぜひ気軽に参加してくださいね！</span>
       </p>
     </div>
