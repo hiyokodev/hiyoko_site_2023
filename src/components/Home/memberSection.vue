@@ -2,7 +2,7 @@
   <!-- <sectionLayout title="Member" style="padding: 0"> -->
   <sectionLayout title="Member">
     <p class="description">
-      <span>所属部署や仕事も様々な、個性豊かな仲間たちです。</span>
+      <span>所属部署や仕事も様々な、個性豊かな仲間たち。</span>
     </p>
     <div class="scroll_pc_container">
       <div class="scroll_pc">

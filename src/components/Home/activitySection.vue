@@ -1,6 +1,8 @@
 <template>
   <SectionLayout title="Activity">
-    <p class="description">ひよこ開発の主な活動です。</p>
+    <p class="description">
+      ひよこ開発の主な活動です。 <br />仲間と一緒だから始められる。続けられる。
+    </p>
     <div class="contents">
       <div class="content">
         <img src="@/assets/img//Home/activity_website.webp" />
@@ -42,6 +44,7 @@ export default {
 <style scoped>
 .description {
   margin: 0 0 50px 0;
+  line-height: 40px;
 }
 .contents {
   display: flex;
