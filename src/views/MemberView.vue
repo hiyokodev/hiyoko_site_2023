@@ -4,7 +4,7 @@
     <BackgroundEggs :eggsInfo="eggsInfo" />
     <div class="contents">
       <h2 class="top">Member</h2>
-      <p class="description"><span>所属部署や仕事も様々な、</span><span>個性豊かな仲間たちです。</span></p>
+      <p class="description"><span>ひよこ開発の個性豊かな仲間たち</span></p>
       <div class="photos">
         <div class="member" v-for="member in members" :key="member.name">
           <div class="image_wrapper">
