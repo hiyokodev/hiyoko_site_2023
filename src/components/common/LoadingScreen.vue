@@ -17,7 +17,7 @@ export default {
     // 仮の読み込み完了判定として、2秒後にローディングを非表示にする
     setTimeout(() => {
       this.isLoading = false
-    }, 2000)
+    }, 1000)
   }
 }
 </script>
