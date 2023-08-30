@@ -1,15 +1,15 @@
 <template>
   <!-- PC -->
   <div class="pc" v-for="egg in eggsInfo.pc" :key="egg">
-    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="300" />
+    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="400" />
   </div>
   <!-- タブレット -->
   <div class="tb" v-for="egg in eggsInfo.tb" :key="egg">
-    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="250" />
+    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="300" />
   </div>
   <!-- スマートフォン -->
   <div class="sp" v-for="egg in eggsInfo.sp" :key="egg">
-    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="200" />
+    <Egg :initialTop="egg.top" :initialLeft="egg.left" :width="250" />
   </div>
 </template>
 

@@ -47,5 +47,6 @@ export default {
   position: absolute;
   z-index: -10;
   bottom: 0;
+  filter: drop-shadow(1px, 1px, 5px black);
 }
 </style>
