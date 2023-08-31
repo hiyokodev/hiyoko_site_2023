@@ -31,7 +31,22 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import { preloadImages } from '@/utils/preloadHelpers.js'
+import img_LT from '@/assets/img/Activity/LT.webp'
+import img_sp_LT from '@/assets/img/Activity/sp_LT.webp'
+export default {
+  data() {
+    return {
+      LTImageSrc: img_LT,
+      spLTImageSrc: img_sp_LT
+    }
+  },
+  async mounted() {
+    await preloadImages([this.LTImageSrc, this.spLTImageSrc])
+  }
+}
+</script>
 <style scoped>
 .pc_view {
   display: flex;
