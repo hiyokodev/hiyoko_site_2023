@@ -23,8 +23,6 @@ import BackgroundEggs from '../components/common/BackgroundEggs.vue'
 import Website from '../components/Activity/Website.vue'
 import LT from '../components/Activity/LT.vue'
 import Events from '../components/Activity/Events.vue'
-import hogeImage from '@/assets/img/hoge.png'
-import fugaImage from '@/assets/img/fuga.png'
 export default {
   components: {
     Header,
