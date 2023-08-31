@@ -22,5 +22,7 @@ html,
 body {
   position: relative;
   overflow-x: hidden;
+  background-color: #fffff0;
+  z-index: -20;
 }
 </style>

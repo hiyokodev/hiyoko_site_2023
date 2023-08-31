@@ -13,6 +13,10 @@ export default {}
 section {
   margin-bottom: 100px;
   background-color: #ffffe5;
+  -webkit-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  -moz-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  -ms-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
 }
 .Img_Container {
   display: flex;
