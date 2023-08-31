@@ -32,7 +32,22 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import { preloadImages } from '@/utils/preloadHelpers.js'
+import img_events from '@/assets/img/Activity/events.webp'
+import img_sp_events from '@/assets/img/Activity/sp_events.webp'
+export default {
+  data() {
+    return {
+      eventsImageSrc: img_events,
+      spEventsImageSrc: img_sp_events
+    }
+  },
+  async mounted() {
+    await preloadImages([this.eventsImageSrc, this.spEventsImageSrc])
+  }
+}
+</script>
 <style scoped>
 .pc_view {
   display: flex;

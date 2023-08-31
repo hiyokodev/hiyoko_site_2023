@@ -33,7 +33,22 @@
   </div>
 </template>
 
-<script></script>
+<script>
+import { preloadImages } from '@/utils/preloadHelpers.js'
+import img_website from '@/assets/img/Activity/website.webp'
+import img_sp_website from '@/assets/img/Activity/sp_website.webp'
+export default {
+  data() {
+    return {
+      websiteImageSrc: img_website,
+      spWebsiteImageSrc: img_sp_website
+    }
+  },
+  async mounted() {
+    await preloadImages([this.websiteImageSrc, this.spWebsiteImageSrc])
+  }
+}
+</script>
 <style scoped>
 .pc_view {
   display: flex;
