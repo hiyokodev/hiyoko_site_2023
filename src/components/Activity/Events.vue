@@ -5,8 +5,8 @@
       <img src="@/assets/img/Activity/events.webp" class="content_img" />
     </div>
     <div class="hiyoko_container">
-      <img src="@/assets/img/hiyoko_02.png" class="events_hiyoko" />
-      <img src="@/assets/img/hiyoko_ashiato02.png" class="events_ashiato" />
+      <img src="@/assets/img/Common/hiyoko_left.png" class="events_hiyoko" />
+      <img src="@/assets/img/Common/ashiato_left.png" class="events_ashiato" />
     </div>
   </div>
   <!-- スマートフォン -->
