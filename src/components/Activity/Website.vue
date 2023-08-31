@@ -5,8 +5,8 @@
       <img src="@/assets/img/Activity/website.webp" class="content_img" />
     </div>
     <div class="hiyoko_container">
-      <img src="@/assets/img/hiyoko_ashiato01.png" class="website_ashiato" />
-      <img src="@/assets/img/hiyoko_01.png" class="website_hiyoko" />
+      <img src="@/assets/img/Common/ashiato_right.png" class="website_ashiato" />
+      <img src="@/assets/img/Common/hiyoko_right.png" class="website_hiyoko" />
     </div>
   </div>
   <!-- スマートフォン -->
