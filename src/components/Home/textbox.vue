@@ -17,6 +17,10 @@ export default {}
   max-width: 600px;
   border-radius: 20px;
   background-color: rgba(230, 230, 230, 0.7);
+  -webkit-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  -moz-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  -ms-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .textbox_inner {

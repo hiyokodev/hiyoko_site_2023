@@ -1,6 +1,7 @@
 <template>
   <Header />
   <main>
+    <BackgroundEggs :eggsInfo="eggsInfo" />
     <div class="contents">
       <h2 class="top">Member</h2>
       <p class="description"><span>ひよこ開発の個性豊かな仲間たち</span></p>
@@ -59,6 +60,7 @@
 <script>
 import Header from '../components/common/Header.vue'
 import Button from '../components/common/Button.vue'
+import BackgroundEggs from '../components/common/BackgroundEggs.vue'
 import sugawara_photo from '@/assets/img/Members/up/sugawara.webp'
 import koyama_photo from '@/assets/img/Members/up/koyama.webp'
 import tauchi_photo from '@/assets/img/Members/up/tauchi.webp'
@@ -91,6 +93,7 @@ export default {
   components: {
     Header,
     Button,
+    BackgroundEggs
   },
   data() {
     return {
@@ -219,7 +222,33 @@ export default {
     learned: '遊び＝勉強',
     words: ['インターバルとかないん？', 'コンパクト', 'ナイスリベロ！', '人好き', '積極的盲点'] 
   },
-      ]
+      ],
+      eggsInfo: {
+        pc: [
+          { top: 100, left: 5 },
+          { top: 400, left: 85 },
+          { top: 700, left: 25 },
+          { top: 1000, left: 70 },
+          { top: 1300, left: 10 },
+        ],
+        tb: [
+          { top: 100, left: 5 },
+          { top: 400, left: 85 },
+          { top: 600, left: 15 },
+          { top: 1000, left: 70 },
+          { top: 1300, left: 10 },
+        ],
+        sp: [
+          { top: 100, left: 75 },
+          { top: 300, left: 5 },
+          { top: 600, left: 55 },
+          { top: 1000, left: 10 },
+          { top: 1300, left: 80 },
+          { top: 1400, left: -30 },
+          { top: 1700, left: 60 },
+          { top: 1900, left: 0 },
+        ]
+      }
     }
   },
   methods: {
